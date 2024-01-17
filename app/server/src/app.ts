@@ -7,7 +7,6 @@ class App {
     this.app = express();
     this.config();
     this.app.get('/', (_req, res) => res.json({ ok: true }));
-    this.app.get('/test', (_req, res) => res.json({ ok: 'teste' }));
   }
 
   private config(): void {
