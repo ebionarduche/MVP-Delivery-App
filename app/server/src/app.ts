@@ -5,9 +5,7 @@ class App {
 
   constructor() {
     this.app = express();
-
     this.config();
-
     this.app.get('/', (_req, res) => res.json({ ok: true }));
     this.app.get('/test', (_req, res) => res.json({ ok: 'teste' }));
   }
@@ -27,8 +25,6 @@ class App {
     this.app.listen(PORT, () => console.log(`Running on port ${PORT}`));
   }
 }
-//
 export { App };
 
-// Essa segunda exportação é estratégica, e a execução dos testes de cobertura depende dela
 export const { app } = new App();
