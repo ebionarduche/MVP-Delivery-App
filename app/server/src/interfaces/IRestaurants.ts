@@ -1,7 +1,7 @@
 export interface IRestaurants {
   id: number,
-  storeName: string,
-  category: string,
+  restaurantName: string,
+  categoryId: number,
   description: string,
   address: string,
   phone: string,

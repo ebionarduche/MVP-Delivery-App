@@ -4,8 +4,8 @@ exports.default = {
     up: async (queryInterface) => {
         await queryInterface.bulkInsert('restaurants', [
             {
-                storeName: 'NashVille',
-                category: 'Lanches',
+                restaurantName: 'NashVille',
+                categoryId: 1,
                 description: 'Melhor lanche da cidade',
                 address: 'Rua dos burros Número 02',
                 phone: '(24) 84362-4544',
@@ -17,4 +17,4 @@ exports.default = {
         await queryInterface.bulkDelete('restaurants', {});
     },
 };
-//# sourceMappingURL=20240118005136-RestaurantsSeed.js.map
+//# sourceMappingURL=20240118205136-RestaurantsSeed.js.map

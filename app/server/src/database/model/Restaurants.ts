@@ -5,12 +5,14 @@ import {
   InferCreationAttributes,
 } from 'sequelize';
 import db from '.';
+import Categories from './Categories';
+
 
 class Restaurants extends Model<InferAttributes<Restaurants>,
 InferCreationAttributes<Restaurants>> {
   declare id: number;
-  declare storeName: string;
-  declare category: string;
+  declare restaurantName: string;
+  declare categoryId: string;
   declare description: string;
   declare address: string;
   declare phone: string;
@@ -24,13 +26,17 @@ Restaurants.init({
     primaryKey: true,
     autoIncrement: true,
   },
-  storeName: {
+  restaurantName: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  category: {
-    type: DataTypes.STRING,
+  categoryId: {
+    type: DataTypes.INTEGER,
     allowNull: false,
+    references: {
+      model: 'categories',
+      key: 'id',
+    }
   },
   description: {
     type: DataTypes.STRING,
@@ -54,5 +60,8 @@ Restaurants.init({
   timestamps: false,
   underscored: true,
 });
+
+Restaurants.belongsTo(Categories, { foreignKey: 'categories_id', as: 'categories' });
+
 
 export default Restaurants;

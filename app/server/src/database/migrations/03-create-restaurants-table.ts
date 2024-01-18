@@ -10,13 +10,17 @@ export default {
         autoIncrement: true,
         primaryKey: true,
       },
-      storeName: {
+      restaurantName: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      category: {
-        type: DataTypes.STRING,
+      categoryId: {
+        type: DataTypes.INTEGER,
         allowNull: false,
+        references: {
+          model: 'categories',
+          key: 'id',
+        }
       },
       description: {
         type: DataTypes.STRING,

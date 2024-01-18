@@ -10,13 +10,17 @@ exports.default = {
                 autoIncrement: true,
                 primaryKey: true,
             },
-            storeName: {
+            restaurantName: {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },
-            category: {
-                type: sequelize_1.DataTypes.STRING,
+            categoryId: {
+                type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
+                references: {
+                    model: 'categories',
+                    key: 'id',
+                }
             },
             description: {
                 type: sequelize_1.DataTypes.STRING,
