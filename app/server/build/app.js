@@ -10,7 +10,6 @@ class App {
         this.app = (0, express_1.default)();
         this.config();
         this.app.get('/', (_req, res) => res.json({ ok: true }));
-        this.app.get('/test', (_req, res) => res.json({ ok: 'teste' }));
     }
     config() {
         const accessControl = (_req, res, next) => {
@@ -26,6 +25,5 @@ class App {
     }
 }
 exports.App = App;
-// Essa segunda exportação é estratégica, e a execução dos testes de cobertura depende dela
 exports.app = new App().app;
 //# sourceMappingURL=app.js.map

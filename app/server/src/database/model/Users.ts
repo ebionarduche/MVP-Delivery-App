@@ -45,7 +45,7 @@ Users.init({
   },
 }, {
   sequelize: db,
-  modelName: 'categories',
+  modelName: 'users',
   timestamps: false,
   underscored: true,
 });
