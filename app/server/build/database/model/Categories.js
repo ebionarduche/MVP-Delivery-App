@@ -15,7 +15,7 @@ Categories.init({
         autoIncrement: true,
     },
     category: {
-        type: sequelize_1.DataTypes.INTEGER,
+        type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
 }, {
