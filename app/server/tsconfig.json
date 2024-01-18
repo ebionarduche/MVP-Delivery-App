@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "./build", // Mantenha o caminho relativo à raiz do projeto
+    "rootDir": "./src", // Mantenha o caminho relativo à raiz do projeto
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"], // Mantenha o caminho relativo à raiz do projeto
+  "exclude": ["src/tests"] // Mantenha o caminho relativo à raiz do projeto
+}
