@@ -5,11 +5,11 @@ export default {
     await queryInterface.bulkInsert('users',
       [
         {
-          userName: 'Ebio Narduche',
-          email: 'ebionarduche77@gmail.com',
-          password: '123456',
-          address: 'Rua dos burros Número 01',
-          phone: '(24) 54288-4456'
+          userName: 'Fred Marques',
+          email: 'fred@graodireto.com.br',
+          password: '123Fred',
+          address: 'Uberaba, Minas Gerais',
+          phone: '(34) 54288-4456'
         },
       ],
       {},
