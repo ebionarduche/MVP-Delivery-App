@@ -17,4 +17,4 @@ exports.default = {
         await queryInterface.bulkDelete('restaurants', {});
     },
 };
-//# sourceMappingURL=20240118205136-RestaurantsSeed.js.map
+//# sourceMappingURL=20240118124436-RestaurantsSeed.js.map
