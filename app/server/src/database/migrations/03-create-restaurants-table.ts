@@ -1,9 +1,9 @@
 import { Model, QueryInterface, DataTypes } from 'sequelize';
-import { IStores } from '../../interfaces/IStores';
+import { IRestaurants } from '../../interfaces/IRestaurants';
 
 export default {
   up(queryInterface: QueryInterface) {
-    return queryInterface.createTable<Model<IStores>>('stores', {
+    return queryInterface.createTable<Model<IRestaurants>>('restaurants', {
       id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -37,6 +37,6 @@ export default {
     });
   },
   down(queryInterface: QueryInterface) {
-    return queryInterface.dropTable('stores');
+    return queryInterface.dropTable('restaurants');
   },
 };

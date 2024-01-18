@@ -6,8 +6,8 @@ import {
 } from 'sequelize';
 import db from '.';
 
-class Stores extends Model<InferAttributes<Stores>,
-InferCreationAttributes<Stores>> {
+class Restaurants extends Model<InferAttributes<Restaurants>,
+InferCreationAttributes<Restaurants>> {
   declare id: number;
   declare storeName: string;
   declare category: string;
@@ -17,7 +17,7 @@ InferCreationAttributes<Stores>> {
   declare logo: string;
 }
 
-Stores.init({
+Restaurants.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -50,9 +50,9 @@ Stores.init({
   },
 }, {
   sequelize: db,
-  modelName: 'stores',
+  modelName: 'restaurants',
   timestamps: false,
   underscored: true,
 });
 
-export default Stores;
+export default Restaurants;

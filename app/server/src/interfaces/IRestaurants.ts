@@ -1,4 +1,4 @@
-export interface IStores {
+export interface IRestaurants {
   id: number,
   storeName: string,
   category: string,

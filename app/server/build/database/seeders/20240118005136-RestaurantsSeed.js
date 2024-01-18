@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     up: async (queryInterface) => {
-        await queryInterface.bulkInsert('stores', [
+        await queryInterface.bulkInsert('restaurants', [
             {
                 storeName: 'NashVille',
                 category: 'Lanches',
@@ -14,7 +14,7 @@ exports.default = {
         ], {});
     },
     down: async (queryInterface) => {
-        await queryInterface.bulkDelete('stores', {});
+        await queryInterface.bulkDelete('restaurants', {});
     },
 };
-//# sourceMappingURL=20240118005136-StoresSeed.js.map
+//# sourceMappingURL=20240118005136-RestaurantsSeed.js.map
