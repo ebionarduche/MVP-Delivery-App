@@ -22,30 +22,25 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const bcrypt = __importStar(require("bcryptjs"));
-const UsersModel_1 = __importDefault(require("../models/UsersModel"));
-const Token_1 = __importDefault(require("../auth/Token"));
-class UsersService {
-    constructor(usersModel = new UsersModel_1.default(), JWT = new Token_1.default()) {
-        this.usersModel = usersModel;
-        this.JWT = JWT;
+const jwt = __importStar(require("jsonwebtoken"));
+class Token {
+    constructor() {
+        this.secret = process.env.JWT_SECRET || 'secret';
+        this.options = { expiresIn: '7d', algorithm: 'HS256' };
     }
-    async login(data) {
-        const user = await this.usersModel.findbyEmail(data.email);
-        if (!user) {
-            return { status: 'UNAUTHORIZED', data: { message: 'Invalid email or password' } };
+    generateToken(payload) {
+        return jwt.sign(payload, this.secret, this.options);
+    }
+    validateToken(token) {
+        try {
+            const decoded = jwt.verify(token, this.secret);
+            return decoded;
         }
-        const { password, ...payload } = user;
-        if (!bcrypt.compareSync(data.password, password)) {
-            return { status: 'UNAUTHORIZED', data: { message: 'Invalid email or password' } };
+        catch (error) {
+            return null;
         }
-        const token = this.JWT.generateToken(payload);
-        return { status: 'SUCCESS', data: { token } };
     }
 }
-exports.default = UsersService;
-//# sourceMappingURL=UsersService.js.map
+exports.default = Token;
+//# sourceMappingURL=Token.js.map

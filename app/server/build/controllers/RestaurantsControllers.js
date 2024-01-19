@@ -15,8 +15,6 @@ class RestaurantsController {
             return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
         }
         catch {
-            const { data } = await this.restaurantsService.getAll();
-            console.log(data);
             return res.status(500).json({ message: 'Internal Error' });
         }
     }
