@@ -10,6 +10,9 @@ class CategoriesService {
     }
     async getAll() {
         const categories = await this.categoriesModel.findAll();
+        if (!categories) {
+            return { status: 'BAD_REQUEST', data: { message: 'Something went wrong' } };
+        }
         return { status: 'SUCCESS', data: categories };
     }
 }

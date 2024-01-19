@@ -3,15 +3,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ProductsService_1 = __importDefault(require("../services/ProductsService"));
+const UsersService_1 = __importDefault(require("../services/UsersService"));
 const mapStatusHTTP_1 = __importDefault(require("../utils/mapStatusHTTP"));
-class ProductsController {
-    constructor(productsService = new ProductsService_1.default()) {
-        this.productsService = productsService;
+class UsersController {
+    constructor(usersService = new UsersService_1.default()) {
+        this.usersService = usersService;
     }
-    async getAll(_req, res) {
+    async login(req, res) {
         try {
-            const { status, data } = await this.productsService.getAll();
+            const { status, data } = await this.usersService.login(req.body);
             return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
         }
         catch {
@@ -19,5 +19,5 @@ class ProductsController {
         }
     }
 }
-exports.default = ProductsController;
-//# sourceMappingURL=ProductsControllers.js.map
+exports.default = UsersController;
+//# sourceMappingURL=UsersControllers.js.map
