@@ -63,7 +63,7 @@ Restaurants.init({
 	underscored: true,
 });
 
-Restaurants.belongsTo(Categories, { foreignKey: 'categories_id', as: 'categories' });
+Restaurants.belongsTo(Categories, { foreignKey: 'category_id', as: 'categories' });
 
 
 export default Restaurants;

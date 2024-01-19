@@ -51,6 +51,6 @@ Restaurants.init({
     timestamps: false,
     underscored: true,
 });
-Restaurants.belongsTo(Categories_1.default, { foreignKey: 'categories_id', as: 'categories' });
+Restaurants.belongsTo(Categories_1.default, { foreignKey: 'category_id', as: 'categories' });
 exports.default = Restaurants;
 //# sourceMappingURL=Restaurants.js.map
