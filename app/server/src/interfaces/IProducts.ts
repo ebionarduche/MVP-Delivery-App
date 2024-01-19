@@ -1,6 +1,6 @@
 export interface IProducts {
   id: number,
-  name: string,
+  productName: string,
   restaurantId: number,
   typeId: number,
   description: string,

@@ -16,13 +16,15 @@ Products.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    name: {
+    productName: {
         type: sequelize_1.DataTypes.STRING,
+        field: 'product_name',
         allowNull: false,
     },
     restaurantId: {
         type: sequelize_1.DataTypes.INTEGER,
         allowNull: false,
+        field: 'restaurant_id',
         references: {
             model: 'restaurants',
             key: 'id',
@@ -31,6 +33,7 @@ Products.init({
     typeId: {
         type: sequelize_1.DataTypes.INTEGER,
         allowNull: false,
+        field: 'type_id',
         references: {
             model: 'productType',
             key: 'id',
@@ -54,7 +57,7 @@ Products.init({
     timestamps: false,
     underscored: true,
 });
-Products.belongsTo(Restaurants_1.default, { foreignKey: 'restaurantId', as: 'restaurant' });
+Products.belongsTo(Restaurants_1.default, { foreignKey: 'restaurant_id', as: 'restaurant' });
 Products.belongsTo(ProductType_1.default, { foreignKey: 'typeId', as: 'productType' });
 exports.default = Products;
 //# sourceMappingURL=Products.js.map

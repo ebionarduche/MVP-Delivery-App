@@ -10,13 +10,15 @@ exports.default = {
                 autoIncrement: true,
                 primaryKey: true,
             },
-            name: {
+            productName: {
                 type: sequelize_1.DataTypes.STRING,
+                field: 'product_name',
                 allowNull: false,
             },
             restaurantId: {
                 type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
+                field: 'restaurant_id',
                 references: {
                     model: 'restaurants',
                     key: 'id',
@@ -25,6 +27,7 @@ exports.default = {
             typeId: {
                 type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
+                field: 'type_id',
                 references: {
                     model: 'productType',
                     key: 'id',

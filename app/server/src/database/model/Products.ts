@@ -12,7 +12,7 @@ import Restaurants from './Restaurants';
 class Products extends Model<InferAttributes<Products>,
 InferCreationAttributes<Products>> {
 	declare id: number;
-	declare name: string;
+	declare productName: string;
 	declare restaurantId: number;
 	declare typeId: number;
 	declare description: string;
@@ -27,13 +27,15 @@ Products.init({
 		primaryKey: true,
 		autoIncrement: true,
 	},
-	name: {
+	productName: {
 		type: DataTypes.STRING,
+		field: 'product_name',
 		allowNull: false,
 	},
 	restaurantId: {
 		type: DataTypes.INTEGER,
 		allowNull: false,
+		field: 'restaurant_id',
 		references: {
 			model: 'restaurants',
 			key: 'id',
@@ -42,6 +44,7 @@ Products.init({
 	typeId: {
 		type: DataTypes.INTEGER,
 		allowNull: false,
+		field: 'type_id',
 		references: {
 			model: 'productType',
 			key: 'id',
@@ -66,7 +69,7 @@ Products.init({
 	underscored: true,
 });
 
-Products.belongsTo(Restaurants, { foreignKey: 'restaurantId', as: 'restaurant' });
+Products.belongsTo(Restaurants, { foreignKey: 'restaurant_id', as: 'restaurant' });
 Products.belongsTo(ProductType, { foreignKey: 'typeId', as: 'productType' });
 
 

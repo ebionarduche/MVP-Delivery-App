@@ -10,13 +10,15 @@ export default {
 				autoIncrement: true,
 				primaryKey: true,
 			},
-			name: {
+			productName: {
 				type: DataTypes.STRING,
+				field: 'product_name',
 				allowNull: false,
 			},
 			restaurantId: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
+				field: 'restaurant_id',
 				references: {
 					model: 'restaurants',
 					key: 'id',
@@ -25,6 +27,7 @@ export default {
 			typeId: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
+				field: 'type_id',
 				references: {
 					model: 'productType',
 					key: 'id',

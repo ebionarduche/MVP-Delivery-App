@@ -5,9 +5,9 @@ export default {
 		await queryInterface.bulkInsert('products',
 			[
 				{
-					name: 'Hambúrguer',
-					restaurantId: 1,
-					typeId: 1,
+					product_name: 'Hambúrguer',
+					restaurant_id: 1,
+					type_id: 1,
 					description: 'Pão, carne, queijo e bacon.',
 					price: 21.50,
 					illustration: 'link-imagem-logo-produto'
