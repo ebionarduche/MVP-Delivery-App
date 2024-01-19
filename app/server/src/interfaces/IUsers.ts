@@ -12,6 +12,11 @@ export interface ILogin {
   password: string
 }
 
+export interface IToken {
+  token: string;
+}
+
+
 
 export interface IUsersModel {
   findbyEmail(email: IUsers['email']): Promise<IUsers | null>
