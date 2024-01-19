@@ -4,8 +4,8 @@ exports.default = {
     up: async (queryInterface) => {
         await queryInterface.bulkInsert('restaurants', [
             {
-                restaurantName: 'NashVille',
-                categoryId: 1,
+                restaurant_name: 'NashVille',
+                category_id: 1,
                 description: 'Melhor lanche da cidade',
                 address: 'Rua dos burros Número 02',
                 phone: '(24) 84362-4544',

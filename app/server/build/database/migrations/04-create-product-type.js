@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
 exports.default = {
     up(queryInterface) {
-        return queryInterface.createTable('ProductType', {
+        return queryInterface.createTable('productType', {
             id: {
                 type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
@@ -17,7 +17,7 @@ exports.default = {
         });
     },
     down(queryInterface) {
-        return queryInterface.dropTable('ProductType');
+        return queryInterface.dropTable('productType');
     },
 };
 //# sourceMappingURL=04-create-product-type.js.map

@@ -6,4 +6,3 @@ export interface IUsers {
   address: string,
   phone: string,
 }
-

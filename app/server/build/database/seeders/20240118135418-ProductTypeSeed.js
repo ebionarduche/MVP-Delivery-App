@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     up: async (queryInterface) => {
-        await queryInterface.bulkInsert('ProductType', [
+        await queryInterface.bulkInsert('productType', [
             {
                 type: 'Refeições',
             },
@@ -12,7 +12,7 @@ exports.default = {
         ], {});
     },
     down: async (queryInterface) => {
-        await queryInterface.bulkDelete('ProductType', {});
+        await queryInterface.bulkDelete('productType', {});
     },
 };
 //# sourceMappingURL=20240118135418-ProductTypeSeed.js.map
