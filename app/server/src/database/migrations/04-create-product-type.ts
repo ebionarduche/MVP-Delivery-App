@@ -3,7 +3,7 @@ import { IProductType } from '../../interfaces/IProductType';
 
 export default {
 	up(queryInterface: QueryInterface) {
-		return queryInterface.createTable<Model<IProductType>>('productType', {
+		return queryInterface.createTable<Model<IProductType>>('product_types', {
 			id: {
 				type: DataTypes.INTEGER,
 				allowNull: false,
@@ -17,6 +17,6 @@ export default {
 		});
 	},
 	down(queryInterface: QueryInterface) {
-		return queryInterface.dropTable('productType');
+		return queryInterface.dropTable('product_types');
 	},
 };

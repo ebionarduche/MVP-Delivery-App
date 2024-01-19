@@ -29,7 +29,7 @@ exports.default = {
                 allowNull: false,
                 field: 'type_id',
                 references: {
-                    model: 'productType',
+                    model: 'product_types',
                     key: 'id',
                 }
             },

@@ -2,7 +2,7 @@ import { QueryInterface } from 'sequelize';
 
 export default {
 	up: async (queryInterface: QueryInterface) => {
-		await queryInterface.bulkInsert('productType',
+		await queryInterface.bulkInsert('product_types',
 			[
 				{
 					type: 'Refeições',
@@ -16,6 +16,6 @@ export default {
 	},
 
 	down: async (queryInterface: QueryInterface) => {
-		await queryInterface.bulkDelete('productType', {});
+		await queryInterface.bulkDelete('product_types', {});
 	},
 };
