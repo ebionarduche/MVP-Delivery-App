@@ -11,6 +11,9 @@ export default class ProductsController {
 			return res.status(mapStatusHTTP(status)).json(data);
 		}
 		catch {
+			const { data } = await this.productsService.getAll();
+			console.log(data);
+		
 			return res.status(500).json({message: 'Internal Error'});
 		}
 	}
