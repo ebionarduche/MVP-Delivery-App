@@ -9,9 +9,8 @@ class CategoriesService {
         this.categoriesModel = categoriesModel;
     }
     async getAll() {
-        const categories = this.categoriesModel.findAll();
-        console.log(categories);
-        return { status: 'SUCCESS', data: 'test' };
+        const categories = await this.categoriesModel.findAll();
+        return { status: 'SUCCESS', data: categories };
     }
 }
 exports.default = CategoriesService;

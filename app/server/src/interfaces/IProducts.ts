@@ -1,6 +1,6 @@
 export interface IProducts {
   id: number,
-  productName: string,
+  name: string,
   restaurantId: number,
   typeId: number,
   description: string,
@@ -8,3 +8,6 @@ export interface IProducts {
   illustration: string,
 }
 
+export interface IProductsModel {
+  findAll(): Promise<IProducts[]>;
+}

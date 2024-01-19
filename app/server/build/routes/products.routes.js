@@ -4,10 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const categories_routes_1 = __importDefault(require("./categories.routes"));
-// import ProductsRouter from './products.routes';
+const ProductsControllers_1 = __importDefault(require("../controllers/ProductsControllers"));
+const productsController = new ProductsControllers_1.default();
 const router = (0, express_1.Router)();
-router.use('/categories', categories_routes_1.default);
-// router.use('/products', ProductsRouter);
+router.get('/', (req, res) => productsController.getAll(req, res));
 exports.default = router;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=products.routes.js.map

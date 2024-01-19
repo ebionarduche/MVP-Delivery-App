@@ -12,7 +12,7 @@ import Restaurants from './Restaurants';
 class Products extends Model<InferAttributes<Products>,
 InferCreationAttributes<Products>> {
 	declare id: number;
-	declare productName: string;
+	declare name: string;
 	declare restaurantId: number;
 	declare typeId: number;
 	declare description: string;
@@ -27,7 +27,7 @@ Products.init({
 		primaryKey: true,
 		autoIncrement: true,
 	},
-	productName: {
+	name: {
 		type: DataTypes.STRING,
 		allowNull: false,
 	},

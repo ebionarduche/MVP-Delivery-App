@@ -10,7 +10,7 @@ exports.default = {
                 autoIncrement: true,
                 primaryKey: true,
             },
-            productName: {
+            name: {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },

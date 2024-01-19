@@ -10,7 +10,7 @@ export default {
 				autoIncrement: true,
 				primaryKey: true,
 			},
-			productName: {
+			name: {
 				type: DataTypes.STRING,
 				allowNull: false,
 			},

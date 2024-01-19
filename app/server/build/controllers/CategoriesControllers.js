@@ -10,8 +10,7 @@ class CategoriesController {
     }
     async getAll(_req, res) {
         const serviceResponse = await this.categoriesService.getAll();
-        console.log(serviceResponse);
-        return res.status(200).json({ message: 'oi' });
+        return res.status(200).json(serviceResponse.data);
     }
 }
 exports.default = CategoriesController;
