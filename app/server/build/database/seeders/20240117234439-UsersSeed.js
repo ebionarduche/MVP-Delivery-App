@@ -6,7 +6,7 @@ exports.default = {
             {
                 user_name: 'Fred Marques',
                 email: 'fred@graodireto.com.br',
-                password: '123Fred',
+                password: '$2a$10$kUkWlXxkkBZfhCmCg.h3w.bAVv5z46n38QZxBAoP72etGBNJkZB36',
                 address: 'Uberaba, Minas Gerais',
                 phone: '(34) 54288-4456'
             },

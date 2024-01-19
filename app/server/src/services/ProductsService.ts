@@ -3,7 +3,6 @@ import { IProducts, IProductsModel } from '../interfaces/IProducts';
 import { ServiceResponse } from '../interfaces/ServiceResponse';
 
 
-
 export default class ProductsService {
 	constructor(private productsModel: IProductsModel = new ProductsModel() ) {}
 

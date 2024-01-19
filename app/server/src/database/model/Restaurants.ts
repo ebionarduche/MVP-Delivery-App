@@ -12,7 +12,7 @@ class Restaurants extends Model<InferAttributes<Restaurants>,
 InferCreationAttributes<Restaurants>> {
 	declare id: number;
 	declare restaurantName: string;
-	declare categoryId: string;
+	declare categoryId: number;
 	declare description: string;
 	declare address: string;
 	declare phone: string;
@@ -63,7 +63,7 @@ Restaurants.init({
 	underscored: true,
 });
 
-Restaurants.belongsTo(Categories, { foreignKey: 'categories_id', as: 'categories' });
+Restaurants.belongsTo(Categories, { foreignKey: 'category_id', as: 'categories' });
 
 
 export default Restaurants;

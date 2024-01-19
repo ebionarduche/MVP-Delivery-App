@@ -35,7 +35,7 @@ Products.init({
         allowNull: false,
         field: 'type_id',
         references: {
-            model: 'productType',
+            model: 'product_types',
             key: 'id',
         }
     },
@@ -58,6 +58,6 @@ Products.init({
     underscored: true,
 });
 Products.belongsTo(Restaurants_1.default, { foreignKey: 'restaurant_id', as: 'restaurant' });
-Products.belongsTo(ProductType_1.default, { foreignKey: 'typeId', as: 'productType' });
+Products.belongsTo(ProductType_1.default, { foreignKey: 'typeId', as: 'product_types' });
 exports.default = Products;
 //# sourceMappingURL=Products.js.map

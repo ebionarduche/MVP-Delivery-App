@@ -46,7 +46,7 @@ Products.init({
 		allowNull: false,
 		field: 'type_id',
 		references: {
-			model: 'productType',
+			model: 'product_types',
 			key: 'id',
 		}
 	},
@@ -70,7 +70,7 @@ Products.init({
 });
 
 Products.belongsTo(Restaurants, { foreignKey: 'restaurant_id', as: 'restaurant' });
-Products.belongsTo(ProductType, { foreignKey: 'typeId', as: 'productType' });
+Products.belongsTo(ProductType, { foreignKey: 'typeId', as: 'product_types' });
 
 
 export default Products;

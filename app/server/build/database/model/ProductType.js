@@ -20,7 +20,7 @@ ProductType.init({
     },
 }, {
     sequelize: _1.default,
-    modelName: 'productType',
+    modelName: 'product_types',
     timestamps: false,
     underscored: true,
 });
