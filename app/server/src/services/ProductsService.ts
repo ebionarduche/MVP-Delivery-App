@@ -8,8 +8,11 @@ export default class ProductsService {
 	constructor(private productsModel: IProductsModel = new ProductsModel() ) {}
 
 	public async getAll(): Promise<ServiceResponse<IProducts[]>> {
-		const categories = await this.productsModel.findAll();
-		return { status: 'SUCCESS', data: categories };
+		const products = await this.productsModel.findAll();
+		if(!products) {
+			return {status: 'BAD_REQUEST', data: {message: 'Something went wrong'} };
+		}
+		return { status: 'SUCCESS', data: products };
 	}
 
 }
