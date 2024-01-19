@@ -13,6 +13,7 @@ exports.default = {
             userName: {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
+                field: 'user_name',
             },
             email: {
                 type: sequelize_1.DataTypes.STRING,

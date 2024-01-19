@@ -4,7 +4,7 @@ exports.default = {
     up: async (queryInterface) => {
         await queryInterface.bulkInsert('users', [
             {
-                userName: 'Fred Marques',
+                user_name: 'Fred Marques',
                 email: 'fred@graodireto.com.br',
                 password: '123Fred',
                 address: 'Uberaba, Minas Gerais',

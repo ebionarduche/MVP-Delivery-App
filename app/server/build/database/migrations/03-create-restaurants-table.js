@@ -13,10 +13,12 @@ exports.default = {
             restaurantName: {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
+                field: 'restaurant_name',
             },
             categoryId: {
                 type: sequelize_1.DataTypes.INTEGER,
                 allowNull: false,
+                field: 'category_id',
                 references: {
                     model: 'categories',
                     key: 'id',

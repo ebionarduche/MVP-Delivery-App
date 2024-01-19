@@ -29,10 +29,12 @@ Restaurants.init({
 	restaurantName: {
 		type: DataTypes.STRING,
 		allowNull: false,
+		field: 'restaurant_name',
 	},
 	categoryId: {
 		type: DataTypes.INTEGER,
 		allowNull: false,
+		field: 'category_id',
 		references: {
 			model: 'categories',
 			key: 'id',
