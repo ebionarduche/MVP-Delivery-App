@@ -12,7 +12,7 @@ class Restaurants extends Model<InferAttributes<Restaurants>,
 InferCreationAttributes<Restaurants>> {
 	declare id: number;
 	declare restaurantName: string;
-	declare categoryId: string;
+	declare categoryId: number;
 	declare description: string;
 	declare address: string;
 	declare phone: string;

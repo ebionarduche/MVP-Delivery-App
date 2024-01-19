@@ -8,7 +8,7 @@ export default class UsersService {
 
 	public async login(data: ILogin): Promise<ServiceResponse<IUsers>> {
 		const user = await this.usersModel.findbyEmail(data.email);
-		if(!user || !bcrypt.compareSync(data.password, user?.password)) {
+		if(!user || !bcrypt.compareSync(data.password, user.password)) {
 			return {status: 'UNAUTHORIZED', data: {message:'Invalid email or password'}};
 		}
 		return {status: 'SUCCESS', data: user};

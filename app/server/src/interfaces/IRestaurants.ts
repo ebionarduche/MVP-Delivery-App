@@ -8,3 +8,6 @@ export interface IRestaurants {
   logo: string,
 }
 
+export interface IRestaurantsModel {
+  findAll(): Promise<IRestaurants[]>;
+}
