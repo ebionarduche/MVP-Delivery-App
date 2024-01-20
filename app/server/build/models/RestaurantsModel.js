@@ -13,7 +13,7 @@ class RestaurantsModel {
     }
     async findAll() {
         const data = await this.model.findAll({
-            attributes: ['id', 'restaurantName', 'description', 'address', 'phone', 'logo'],
+            attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo'],
             include: {
                 model: Categories_1.default,
                 attributes: ['id', 'category'],
@@ -49,24 +49,4 @@ class RestaurantsModel {
     }
 }
 exports.default = RestaurantsModel;
-// const postSearchService = async (searchTerm) => {
-//   if (!searchTerm) return postGetAllService();
-//   const posts = await BlogPost.findAll({
-//     where: { [Op.or]: [
-//       { title: { [Op.like]: %${searchTerm}% } },
-//       { content: { [Op.like]: %${searchTerm}% } },
-//     ] },
-//     include: [
-//       { model: User, as: 'user', attributes: { exclude: ['password'] } },
-//       { model: Category, as: 'categories' },
-//     ],
-//   });
-//   if (!posts.length) return { status: 'SUCCESSFUL', data: [] };
-//   return { status: 'SUCCESSFUL', data: posts };
-// };
-// where: {
-// 	restaurantName: {
-// 			[sequelize_1.Op.iLike]: `%${query}%`,
-// 	},
-// },
 //# sourceMappingURL=RestaurantsModel.js.map
