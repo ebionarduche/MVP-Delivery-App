@@ -24,7 +24,7 @@ export default {
 					key: 'id',
 				}
 			},
-			description: {
+			resume: {
 				type: DataTypes.STRING,
 				allowNull: false,
 			},

@@ -70,6 +70,7 @@ Products.init({
 });
 
 Products.belongsTo(Restaurants, { foreignKey: 'restaurant_id', as: 'restaurant' });
+Restaurants.hasMany(Products, { foreignKey: 'restaurant_id', as: 'products' });
 Products.belongsTo(ProductType, { foreignKey: 'typeId', as: 'product_types' });
 
 

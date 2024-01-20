@@ -24,7 +24,7 @@ exports.default = {
                     key: 'id',
                 }
             },
-            description: {
+            resume: {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },

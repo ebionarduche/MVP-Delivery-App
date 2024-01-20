@@ -14,4 +14,11 @@ export default class RestaurantsService {
 		return { status: 'SUCCESS', data: retaurants };
 	}
 
+	public async findByQuery(query: string): Promise<ServiceResponse<IRestaurants[]>> {
+		const retaurants = await this.restaurantsModel.findByQuery(query);
+		if(!retaurants) {
+			return {status: 'BAD_REQUEST', data: {message: 'Something went wrong'} };
+		}
+		return { status: 'SUCCESS', data: retaurants };
+	}
 }

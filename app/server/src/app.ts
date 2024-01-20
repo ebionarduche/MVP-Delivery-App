@@ -1,5 +1,6 @@
 import express from 'express';
 import router from './routes';
+import cors from 'cors';
 
 
 class App {
@@ -22,6 +23,7 @@ class App {
 		this.app.use(express.json());
 		this.app.use(accessControl);
 		this.app.use(router);
+		this.app.use(cors());
 	}
 
 	public start(PORT: string | number): void {

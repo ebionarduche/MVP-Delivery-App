@@ -13,7 +13,7 @@ InferCreationAttributes<Restaurants>> {
 	declare id: number;
 	declare restaurantName: string;
 	declare categoryId: number;
-	declare description: string;
+	declare resume: string;
 	declare address: string;
 	declare phone: string;
 	declare logo: string;
@@ -40,7 +40,7 @@ Restaurants.init({
 			key: 'id',
 		}
 	},
-	description: {
+	resume: {
 		type: DataTypes.STRING,
 		allowNull: false,
 	},

@@ -58,6 +58,7 @@ Products.init({
     underscored: true,
 });
 Products.belongsTo(Restaurants_1.default, { foreignKey: 'restaurant_id', as: 'restaurant' });
+Restaurants_1.default.hasMany(Products, { foreignKey: 'restaurant_id', as: 'products' });
 Products.belongsTo(ProductType_1.default, { foreignKey: 'typeId', as: 'product_types' });
 exports.default = Products;
 //# sourceMappingURL=Products.js.map
