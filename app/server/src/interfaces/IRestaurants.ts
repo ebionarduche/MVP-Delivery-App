@@ -10,4 +10,5 @@ export interface IRestaurants {
 
 export interface IRestaurantsModel {
   findAll(): Promise<IRestaurants[]>;
+  findByQuery(query: string): Promise<IRestaurants[]>;
 }

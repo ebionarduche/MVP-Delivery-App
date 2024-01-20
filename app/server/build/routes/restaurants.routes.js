@@ -8,5 +8,6 @@ const RestaurantsControllers_1 = __importDefault(require("../controllers/Restaur
 const restaurantsController = new RestaurantsControllers_1.default();
 const router = (0, express_1.Router)();
 router.get('/', (req, res) => restaurantsController.getAll(req, res));
+router.get('/search', (req, res) => restaurantsController.findByQuery(req, res));
 exports.default = router;
 //# sourceMappingURL=restaurants.routes.js.map

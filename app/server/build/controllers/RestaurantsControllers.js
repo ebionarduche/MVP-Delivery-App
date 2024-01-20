@@ -18,6 +18,19 @@ class RestaurantsController {
             return res.status(500).json({ message: 'Internal Error' });
         }
     }
+    async findByQuery(req, res) {
+        try {
+            const { query } = req.query;
+            if (!query) {
+                return res.status(400).json({ message: 'The query parameter is required' });
+            }
+            const { status, data } = await this.restaurantsService.findByQuery(query);
+            return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
+        }
+        catch {
+            return res.status(500).json({ message: 'Internal Error' });
+        }
+    }
 }
 exports.default = RestaurantsController;
 //# sourceMappingURL=RestaurantsControllers.js.map
