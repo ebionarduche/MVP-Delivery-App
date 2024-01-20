@@ -13,5 +13,4 @@ export default class ProductsService {
 		}
 		return { status: 'SUCCESS', data: products };
 	}
-
 }
