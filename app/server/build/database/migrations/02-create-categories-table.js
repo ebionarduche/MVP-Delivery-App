@@ -14,6 +14,10 @@ exports.default = {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },
+            image: {
+                type: sequelize_1.DataTypes.STRING,
+                allowNull: false,
+            },
         });
     },
     down(queryInterface) {

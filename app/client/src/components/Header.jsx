@@ -11,7 +11,6 @@ function Header() {
         setsearchTerm(value);
         try {
             const {data} = await axios.get(`http://localhost:3001/restaurants/search?query=${value}`);
-            console.log(data);
             setrestaurantsData(data);
         } catch (error) {
             console.error(error);

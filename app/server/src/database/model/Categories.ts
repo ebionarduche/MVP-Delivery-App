@@ -10,6 +10,7 @@ class Categories extends Model<InferAttributes<Categories>,
 InferCreationAttributes<Categories>> {
 	declare id: number;
 	declare category: string;
+	declare image: string;
 }
 
 Categories.init({
@@ -20,6 +21,10 @@ Categories.init({
 		autoIncrement: true,
 	},
 	category: {
+		type: DataTypes.STRING,
+		allowNull: false,
+	},
+	image: {
 		type: DataTypes.STRING,
 		allowNull: false,
 	},
