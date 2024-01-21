@@ -4,6 +4,7 @@ import RestaurantContext from '../context/RestaurantContext';
 import axios from 'axios';
 import ProductsCard from '../components/ProductsCard';
 import './style/RestaurantDetails.css';
+import Header from '../components/Header';
 
 
 function RestaurantDetails() {
@@ -28,6 +29,7 @@ function RestaurantDetails() {
     
     return (
         <div className='restarant-details-container'>
+            <Header />
             <img className='restarant-details-wallpaper' src={restaurant.wallpaper} alt="" />
             <img className='restarant-details-logo' src={restaurant.logo} alt="" />
             <div className='restarant-details-content'>
