@@ -1,0 +1,85 @@
+.landing-page-container {
+  display: flex;
+  justify-content: center;
+  background-image: url(../../images/wallpapers/wallpaper-login-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.landing-page-back-color {
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 2.5%;
+  margin: 80px;
+  border-radius: 25px;
+  width: 500px;
+  height: 600px;
+}
+
+.landing-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-title-container {
+  margin-right: 2.5%;
+}
+
+.landing-page-title{
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ff0101b9;
+}
+
+.landing-page-logo {
+  width: 30%;
+}
+
+.landing-page-sub-title {
+  margin: 8% 10% 5% 10%;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+  color: #000000b0;
+}
+
+.landing-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.795);
+}
+
+.landing-page-button-create-account,
+.landing-page-button-login {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;;
+}
+
+.landing-page-button-create-account:hover,
+.landing-page-button-login:hover {
+  background-color: #ff0101b9;
+  color: white;
+}
+
+.landing-page-button-create-account {
+  background-color: #ff0101a4;
+}
+
+.landing-page-button-login {
+  background-color: #535353b0;
+  color: white;
+}
+
