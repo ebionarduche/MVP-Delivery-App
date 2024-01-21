@@ -16,7 +16,6 @@
 .categories-list-section:hover {
   transform: scale(1.05);
   transition: transform 0.5s;
-  
 }
 
 .categories-list-img {
