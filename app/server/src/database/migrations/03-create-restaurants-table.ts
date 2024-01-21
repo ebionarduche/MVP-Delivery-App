@@ -40,6 +40,11 @@ export default {
 				type: DataTypes.STRING,
 				allowNull: false,
 			},
+			wallpaper: {
+				type: DataTypes.STRING,
+				allowNull: false,
+			},
+			
 		});
 	},
 	down(queryInterface: QueryInterface) {

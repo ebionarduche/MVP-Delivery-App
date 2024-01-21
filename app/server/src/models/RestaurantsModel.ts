@@ -10,7 +10,7 @@ export default class RestaurantsModel implements IRestaurantsModel {
 
 	async findAll(): Promise<IRestaurants[]> {
 		const data = await this.model.findAll({
-			attributes: ['id','restaurantName', 'resume', 'address', 'phone', 'logo'],
+			attributes: ['id','restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
 			include: {
 				model: Categories,
 				attributes: ['id', 'category' ],
@@ -22,7 +22,7 @@ export default class RestaurantsModel implements IRestaurantsModel {
 
 	async findByQuery(query: string): Promise<IRestaurants[]> {
 		const data = await this.model.findAll({
-			attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', ],
+			attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper' ],
 			include: [
 				{
 					model: Categories,

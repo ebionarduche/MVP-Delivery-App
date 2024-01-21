@@ -24,7 +24,7 @@ class RestaurantsModel {
     }
     async findByQuery(query) {
         const data = await this.model.findAll({
-            attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo',],
+            attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
             include: [
                 {
                     model: Categories_1.default,

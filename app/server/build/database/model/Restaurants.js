@@ -45,6 +45,10 @@ Restaurants.init({
         type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
+    wallpaper: {
+        type: sequelize_1.DataTypes.STRING,
+        allowNull: false,
+    },
 }, {
     sequelize: _1.default,
     modelName: 'restaurants',
