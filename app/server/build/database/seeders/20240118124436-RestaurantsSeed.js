@@ -73,7 +73,7 @@ exports.default = {
                 address: 'Rua das Verduras 567',
                 phone: '(24) 567-8901',
                 logo: 'link-imagem-logo-veggie',
-                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/veggie-haven.jpg'
+                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/veggie-haven-wallpaper.jpg'
             }
         ], {});
     },
