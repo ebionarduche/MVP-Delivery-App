@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import RestaurantContext from '../context/RestaurantContext';
 import RestaurantCard from '../components/RestaurantCard';
+import Header from '../components/Header';
 
 
 
@@ -10,7 +11,7 @@ function Home() {
 
     return(
         <div>
-            <h1>Home</h1>
+            <Header />
             <RestaurantCard restaurantsData={restaurantsData}/>
         </div>
     );
