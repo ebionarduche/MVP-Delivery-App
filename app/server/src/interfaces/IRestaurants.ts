@@ -6,6 +6,7 @@ export interface IRestaurants {
   address: string,
   phone: string,
   logo: string,
+  wallpaper: string,
 }
 
 export interface IRestaurantsModel {

@@ -5,16 +5,33 @@ export default {
 		await queryInterface.bulkInsert('categories',
 			[
 				{
-					category: 'Lanche',
+					category: 'Lanches',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/lanches.avif'
 				}, 
 				{
-					category: 'Pizza',
+					category: 'Pizzas',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/pizzas.avif'
 				},
 				{
-					category: 'Restaurante',
+					category: 'Restaurantes',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/restaurante.avif'
 				},
 				{
-					category: 'Sorveteria',
+					category: 'Sorveterias',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/sorvetes.avif'
+				},
+				{
+					category: 'Padarias',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/padarias.avif'
+				},
+				{
+					category: 'Marmitas',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/marmita.avif'
+				},
+				
+				{
+					category: 'Saudáveis',
+					image: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/categories/saudaveis.avif'
 				},
         
 			],

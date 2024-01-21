@@ -1,18 +1,29 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import wallpaper from '../images/nashville-wallpaper.jpg';
 import perfil from '../images/nashville-perfil.png';
 import './style/RestaurantCard.css';
 
 
 
+
 function RestaurantCard({ restaurantsData }) {
+    const history = useHistory();
+
+
+    const handleClick = (productId) => {
+        history.push(`/restaurant-details/${productId}`);
+    };
+    
     return (
         <div className='restaurant-card-container'>
             {
                 restaurantsData.map((restaurant) => (
-                    <div className='restaurant-card' key={restaurant.id}>
-                        <img className='restaurant-card-wallpaper'src={ wallpaper } alt="" />
+                    <div 
+                        type="button"
+                        onClick={() => handleClick(restaurant.id)}
+                        className='restaurant-card' key={restaurant.id}>
+                        <img className='restaurant-card-wallpaper'src={ restaurant.wallpaper } alt="" />
                         {/* <img className='restaurant-card-perfil' src={restaurant.logo} alt="" /> */}
                         <img className='restaurant-card-perfil'src={ perfil } alt="" />
                         <div className='restaurant-card-title'> 

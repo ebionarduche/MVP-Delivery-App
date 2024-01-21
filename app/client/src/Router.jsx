@@ -9,9 +9,9 @@ function Router() {
     return (
         <Switch>
             <Route exact path="/" component={ LandingPage } />
-            <Route exact path="/login" component={ Login } />
-            <Route exact path="/home" component={ Home } />
-            <Route exact path="/restaurant-details" component={ RestaurantDetails } />
+            <Route path="/login" component={ Login } />
+            <Route path="/home" component={ Home } />
+            <Route path="/restaurant-details/:id" component={ RestaurantDetails } />
         </Switch>
     );
 }

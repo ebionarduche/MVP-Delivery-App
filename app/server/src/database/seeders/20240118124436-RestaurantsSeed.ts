@@ -10,7 +10,8 @@ export default {
 					resume: 'Melhor lanche da cidade',
 					address: 'Rua dos Burgers Número 02',
 					phone: '(24) 84362-4544',
-					logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/nashville-perfil.png'
+					logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/nashville-perfil.png',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/nashville-wallpaper.jpg'
 				},
 				{
 					restaurant_name: 'Pizza Place',
@@ -19,6 +20,7 @@ export default {
 					address: 'Avenida das Pizzas Número 123',
 					phone: '(24) 555-1234',
 					logo: 'link-imagem-logo-pizza',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/pizza-place-wallpaper.jpg'
 				},
 				{
 					restaurant_name: 'Sorveteria Delícia',
@@ -27,6 +29,7 @@ export default {
 					address: 'Avenida dos Sorvetes Número 789',
 					phone: '(24) 999-4567',
 					logo: 'link-imagem-logo-sorveteria',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/soverteria-delicia-wallpaper.jpg'
 				},
 				{
 					restaurant_name: 'Bistrô Encantado',
@@ -35,6 +38,7 @@ export default {
 					address: 'Rua das Delícias Número 543',
 					phone: '(24) 777-8888',
 					logo: 'link-imagem-logo-bistro',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/bristo-encantado.jpg'
 				},
 				{
 					restaurant_name: 'Sushi Palace',
@@ -42,7 +46,8 @@ export default {
 					resume: 'Deliciosos pratos de sushi',
 					address: 'Rua do Sushi 789',
 					phone: '(24) 111-2222',
-					logo: 'link-imagem-logo-sushi'
+					logo: 'link-imagem-logo-sushi',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/sushi-palace.jpg'
 				},
 				{
 					restaurant_name: 'Restaurante Italiano',
@@ -50,7 +55,8 @@ export default {
 					resume: 'Autêntica culinária italiana',
 					address: 'Via Italia 123',
 					phone: '(24) 456-7890',
-					logo: 'link-imagem-logo-italiano'
+					logo: 'link-imagem-logo-italiano',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/restaurante-italiano-wallpaper.jpg'
 				},
 				{
 					restaurant_name: 'Burger Shack',
@@ -58,7 +64,8 @@ export default {
 					resume: 'Saborosos hambúrgueres artesanais',
 					address: 'Avenida dos Burgers 456',
 					phone: '(24) 987-6543',
-					logo: 'link-imagem-logo-burger'
+					logo: 'link-imagem-logo-burger',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/burguer-shack.jpg'
 				},
 				{
 					restaurant_name: 'Veggie Haven',
@@ -66,7 +73,8 @@ export default {
 					resume: 'Opções saudáveis e deliciosas',
 					address: 'Rua das Verduras 567',
 					phone: '(24) 567-8901',
-					logo: 'link-imagem-logo-veggie'
+					logo: 'link-imagem-logo-veggie',
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/veggie-haven-wallpaper.jpg'
 				}
 			],
 			{},

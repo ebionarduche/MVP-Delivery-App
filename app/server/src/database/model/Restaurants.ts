@@ -17,6 +17,7 @@ InferCreationAttributes<Restaurants>> {
 	declare address: string;
 	declare phone: string;
 	declare logo: string;
+	declare wallpaper: string;
 }
 
 Restaurants.init({
@@ -53,6 +54,10 @@ Restaurants.init({
 		allowNull: false,
 	},
 	logo: {
+		type: DataTypes.STRING,
+		allowNull: false,
+	},
+	wallpaper: {
 		type: DataTypes.STRING,
 		allowNull: false,
 	},

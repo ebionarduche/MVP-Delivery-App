@@ -8,19 +8,27 @@ const api = axios.create({
 });
 
 function RestaurantProvider({ children }) {
+    const [originalData, setOriginalData] = useState([]);
     const [restaurantsData, setrestaurantsData] = useState([]);
+    const [searchTerm, setsearchTerm] = useState('');
+
 
     useEffect(() => {
         api.get('/restaurants')
             .then((response) => {
                 console.log((response));
                 setrestaurantsData(response.data);
+                setOriginalData(response.data);
             });
     }, []);
 
     const initialState = useMemo(
         () => ({
             restaurantsData,
+            setrestaurantsData,
+            searchTerm,
+            setsearchTerm,
+            originalData
         }),
         [restaurantsData],
     );

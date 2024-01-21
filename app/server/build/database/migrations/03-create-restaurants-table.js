@@ -40,6 +40,10 @@ exports.default = {
                 type: sequelize_1.DataTypes.STRING,
                 allowNull: false,
             },
+            wallpaper: {
+                type: sequelize_1.DataTypes.STRING,
+                allowNull: false,
+            },
         });
     },
     down(queryInterface) {
