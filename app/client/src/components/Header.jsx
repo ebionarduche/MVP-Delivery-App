@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import RestaurantContext from '../context/RestaurantContext';
 import axios from 'axios';
+import './style/Header.css';
+import mouth from '../images/mouth.png';
 
 
 function Header() {
@@ -21,15 +23,21 @@ function Header() {
     };
 
     return (
-        <div>
-            <h1>Header</h1>
+        <div className='header-container'>
+            <img className='header-img' src={mouth} alt="" />
             <input 
                 id="search-bar" 
+                className='header-search-bar'
                 type="text"
                 name="search-bar"
                 value={searchTerm}
                 onChange={handleInputChange}
             />
+            <span>Olá Fred, você está neste endereço?</span>
+            <span>Colocar Endereço</span>
+            <h2>Perfil</h2>
+            <h2>Out</h2>
+            <h2>Sacola</h2>
         </div>
     );
 }

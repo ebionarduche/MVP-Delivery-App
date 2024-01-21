@@ -11,7 +11,6 @@ function CategoriesList() {
             try {
                 const response = await axios.get('http://localhost:3001/categories');
                 setCategories(response.data);
-                console.log('oi');
             } catch (error) {
                 console.error(error);
             }
