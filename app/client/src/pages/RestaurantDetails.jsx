@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import RestaurantContext from '../context/RestaurantContext';
 import axios from 'axios';
 import ProductsCard from '../components/ProductsCard';
+import './style/RestaurantDetails.css';
 
 
 function RestaurantDetails() {
@@ -26,13 +27,20 @@ function RestaurantDetails() {
     const restaurant = restaurantsData[id - 1];
     
     return (
-        <div>
-            <img src={restaurant.wallpaper} alt="" />
-            <img src={restaurant.logo} alt="" />
-            <h1>{restaurant.restaurantName}</h1>
-            <p>{restaurant.resume}</p>
-            <p>{restaurant.address}</p>
+        <div className='restarant-details-container'>
+            <img className='restarant-details-wallpaper' src={restaurant.wallpaper} alt="" />
+            <img className='restarant-details-logo' src={restaurant.logo} alt="" />
+            <div className='restarant-details-content'>
+                <div>
+                    <h1 className='restarant-details-name'>{restaurant.restaurantName}</h1>
+                    <p className='restarant-details-resume'>{restaurant.resume}</p>
+                </div>
+                <p className='restarant-details-address'>{restaurant.address}</p>
+            </div>
+            <h2>Refeições</h2>
             <ProductsCard products={products} />
+            <h2>Bebidas</h2>
+
         </div>
     );
 }
