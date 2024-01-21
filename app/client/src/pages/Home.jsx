@@ -4,6 +4,7 @@ import RestaurantCard from '../components/RestaurantCard';
 
 
 
+
 function Home() {
     const { restaurantsData } = useContext(RestaurantContext);
 

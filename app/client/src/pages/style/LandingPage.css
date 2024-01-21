@@ -1,7 +1,7 @@
 .landing-page-container {
   display: flex;
   justify-content: center;
-  background-image: url(../../images/wallpapers/wallpaper-login-desktop.jpg);
+  background-image: url(../../images/wallpapers/wallpaper-landing-page-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
