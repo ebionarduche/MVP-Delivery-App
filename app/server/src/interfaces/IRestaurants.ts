@@ -11,7 +11,7 @@ export interface IRestaurants {
 
 export interface IRestaurantsModel {
   findAll(): Promise<IRestaurants[]>;
-  findById(id: number): Promise<IRestaurants[]>;
+  findById(id: number): Promise<IRestaurants | null>;
   findByQuery(query: string): Promise<IRestaurants[]>;
   findByCategoryId(id: number): Promise<IRestaurants[]>;
 }

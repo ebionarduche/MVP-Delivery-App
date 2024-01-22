@@ -14,7 +14,7 @@ export default class RestaurantsService {
 		return { status: 'SUCCESS', data: retaurants };
 	}
 
-	public async findById(id: number): Promise<ServiceResponse<IRestaurants[]>> {
+	public async findById(id: number): Promise<ServiceResponse<IRestaurants>> {
 		const retaurants = await this.restaurantsModel.findById(id);
 		if(!retaurants) {
 			return {status: 'BAD_REQUEST', data: {message: 'Something went wrong'} };

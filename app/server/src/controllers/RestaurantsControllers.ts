@@ -19,7 +19,6 @@ export default class RestaurantsController {
 	public async findById(req: Request, res: Response) {
 		try {
 			const { id } = req.params;
-			console.log('oiiiiiii');
 			if(!id) {
 				return res.status(400).json({ message: 'The id parameter is required' });
 			}

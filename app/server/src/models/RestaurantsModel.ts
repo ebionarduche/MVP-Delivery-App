@@ -20,9 +20,9 @@ export default class RestaurantsModel implements IRestaurantsModel {
 		return data;
 	}
 
-	async findById(id: number): Promise<IRestaurants[]> {
-		const data = await this.model.findAll({
-			attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper' ],
+	async findById(id: number): Promise<IRestaurants | null> {
+		const data = await this.model.findByPk(id, {
+			attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
 			include: [
 				{
 					model: Categories,
@@ -30,12 +30,11 @@ export default class RestaurantsModel implements IRestaurantsModel {
 					as: 'categories',
 				},
 			],
-			where: {
-				id: id,
-			},
 		});
+
 		return data;
 	}
+
 
 	async findByQuery(query: string): Promise<IRestaurants[]> {
 		const data = await this.model.findAll({
