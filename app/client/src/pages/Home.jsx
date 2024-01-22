@@ -3,6 +3,7 @@ import RestaurantContext from '../context/RestaurantContext';
 import RestaurantCard from '../components/RestaurantCard';
 import Header from '../components/Header';
 import CategoriesList from '../components/CategoriesList';
+// import CarouselProducts from '../components/CarouselProducts';
 
 
 
