@@ -14,4 +14,14 @@ export default class UsersController {
 			return res.status(500).json({message: 'Internal Error'});
 		}
 	}
+
+	public async CreateNewUser(req: Request, res: Response) {
+		try {
+			const {status, data} = await this.usersService.CreateNewUser(req.body);
+			return res.status(mapStatusHTTP(status)).json(data);
+		}
+		catch {
+			return res.status(500).json({message: 'Internal Error'});
+		}
+	}
 }
