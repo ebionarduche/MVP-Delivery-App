@@ -19,6 +19,20 @@ class RestaurantsController {
             return res.status(500).json({ message: 'Internal Error' });
         }
     }
+    async findById(req, res) {
+        try {
+            const { id } = req.params;
+            if (!id) {
+                return res.status(400).json({ message: 'The id parameter is required' });
+            }
+            const { status, data } = await this.restaurantsService.findById(Number(id));
+            return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
+        }
+        catch (e) {
+            console.log(e);
+            return res.status(500).json({ message: 'Internal Error' });
+        }
+    }
     async findByQuery(req, res) {
         try {
             const { query } = req.query;
@@ -27,6 +41,20 @@ class RestaurantsController {
                 return res.status(400).json({ message: 'The query parameter is required' });
             }
             const { status, data } = await this.restaurantsService.findByQuery(query);
+            return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
+        }
+        catch (e) {
+            console.log(e);
+            return res.status(500).json({ message: 'Internal Error' });
+        }
+    }
+    async findByCategoryId(req, res) {
+        try {
+            const { id } = req.params;
+            if (!id) {
+                return res.status(400).json({ message: 'The id parameter is required' });
+            }
+            const { status, data } = await this.restaurantsService.findByCategoryId(Number(id));
             return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
         }
         catch (e) {

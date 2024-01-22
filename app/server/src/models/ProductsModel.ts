@@ -39,7 +39,7 @@ export default class ProductsModel implements IProductsModel {
 					attributes: ['id', 'type'],
 					as: 'product_types',
 					where: {
-						id,
+						id: id,
 					}
 				}
 			]

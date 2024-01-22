@@ -14,6 +14,12 @@ class UsersModel {
             return null;
         return user.dataValues;
     }
+    async createNewUser(user) {
+        const newUser = await this.model.create(user);
+        if (!user)
+            return null;
+        return newUser.dataValues;
+    }
 }
 exports.default = UsersModel;
 //# sourceMappingURL=UsersModel.js.map

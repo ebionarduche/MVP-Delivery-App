@@ -15,6 +15,13 @@ class ProductsService {
         }
         return { status: 'SUCCESS', data: products };
     }
+    async findByProductType(id) {
+        const products = await this.productsModel.findByProductType(id);
+        if (!products) {
+            return { status: 'BAD_REQUEST', data: { message: 'Something went wrong' } };
+        }
+        return { status: 'SUCCESS', data: products };
+    }
 }
 exports.default = ProductsService;
 //# sourceMappingURL=ProductsService.js.map
