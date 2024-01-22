@@ -1,7 +1,8 @@
 import React, { useState }from 'react';
-import './style/Login.css';
-import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import './style/Login.css';
+import arrow from '../images/icons/arrow-left.svg';
 
 
 function Login() {
@@ -11,6 +12,7 @@ function Login() {
         email: '',
         password: '',
     });
+    
 
     const handleInputChange = ({ target: { value, name } }) => {
         setFormData((prevData) => ({
@@ -32,14 +34,24 @@ function Login() {
         }
     };
 
+    const navigatePage = (link) => {
+        history.push(link);
+    };
+
     return(
         <div className='login-container'>
             <div className='login-back-color'>
 
                 <div className='login-header'>
-                    <button className='login-back-page'>voltar</button>
-                    <span>Não tem conta?</span>
-                    <span>Cadastre-se</span>
+                    <button 
+                        onClick={() => navigatePage('/')}
+                        className='login-back-page'>
+                        <img className='login-arrow-back' src={arrow} alt="" />
+                    </button>
+                    <div>
+                        <p>Não tem conta?</p>
+                        <a className='login-link' href='/registration'>Cadastre-se</a>
+                    </div>
                 </div>
 
                 <h1 className='login-title' >Acesse seus restaurantes prediletos</h1>
