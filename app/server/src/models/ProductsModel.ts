@@ -24,4 +24,27 @@ export default class ProductsModel implements IProductsModel {
 		});
 		return data;
 	}
+
+	async findByProductType(id: number): Promise<IProducts[]> {
+		const data = await this.model.findAll({
+			attributes: ['id', 'productName', 'description', 'price', 'illustration'],
+			include: [
+				{
+					model: Restaurants,
+					attributes: ['id', 'restaurantName'],
+					as: 'restaurant'
+				},
+				{
+					model: ProductType,
+					attributes: ['id', 'type'],
+					as: 'product_types',
+					where: {
+						id,
+					}
+				}
+			]
+		});
+		return data;
+	}
+		
 }
