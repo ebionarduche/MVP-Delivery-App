@@ -58,7 +58,7 @@ export default {
 					type_id: 2,
 					description: 'Suco de laranja natural.',
 					price: 6.50,
-					illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/sucro-laranja.jpg'
+					illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/suco-laranja.jpg'
 				},
 				{
 					product_name: 'Chá Gelado de Pêssego',
