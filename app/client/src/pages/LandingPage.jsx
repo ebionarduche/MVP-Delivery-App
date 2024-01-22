@@ -28,9 +28,9 @@ function LandingPage() {
                 <button
                     type='button'
                     className='landing-page-button-create-account'
-                    onClick={() => navigatePage('/home')}
+                    onClick={() => navigatePage('/registration')}
                 >
-                Criar cadastro
+                Cadastrar
                 </button>
                 <button
                     type='button'
