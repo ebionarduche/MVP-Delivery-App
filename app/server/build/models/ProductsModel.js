@@ -28,6 +28,27 @@ class ProductsModel {
         });
         return data;
     }
+    async findByProductType(id) {
+        const data = await this.model.findAll({
+            attributes: ['id', 'productName', 'description', 'price', 'illustration'],
+            include: [
+                {
+                    model: Restaurants_1.default,
+                    attributes: ['id', 'restaurantName'],
+                    as: 'restaurant'
+                },
+                {
+                    model: ProductType_1.default,
+                    attributes: ['id', 'type'],
+                    as: 'product_types',
+                    where: {
+                        id: id,
+                    }
+                }
+            ]
+        });
+        return data;
+    }
 }
 exports.default = ProductsModel;
 //# sourceMappingURL=ProductsModel.js.map

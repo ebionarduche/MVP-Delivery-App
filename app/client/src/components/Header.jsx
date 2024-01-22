@@ -3,6 +3,9 @@ import RestaurantContext from '../context/RestaurantContext';
 import axios from 'axios';
 import './style/Header.css';
 import mouth from '../images/mouth.png';
+import user from '../images/icons/user.svg';
+import logOut from '../images/icons/log-out.svg';
+import shoppingBag from '../images/icons/shopping-bag.svg';
 
 
 function Header() {
@@ -35,9 +38,9 @@ function Header() {
             />
             <span>Olá Fred, você está neste endereço?</span>
             <span>Colocar Endereço</span>
-            <h2>Perfil</h2>
-            <h2>Out</h2>
-            <h2>Sacola</h2>
+            <img src={user} alt=""  width='30px'/>
+            <img src={logOut} alt=""  width='30px'/>
+            <img src={shoppingBag} alt=""  width='30px'/>
         </div>
     );
 }

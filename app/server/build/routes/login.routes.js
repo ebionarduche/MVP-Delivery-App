@@ -8,5 +8,6 @@ const UsersControllers_1 = __importDefault(require("../controllers/UsersControll
 const usersControllers = new UsersControllers_1.default();
 const router = (0, express_1.Router)();
 router.post('/', (req, res) => usersControllers.login(req, res));
+router.post('/create', (req, res) => usersControllers.CreateNewUser(req, res));
 exports.default = router;
 //# sourceMappingURL=login.routes.js.map

@@ -8,5 +8,6 @@ const ProductsControllers_1 = __importDefault(require("../controllers/ProductsCo
 const productsController = new ProductsControllers_1.default();
 const router = (0, express_1.Router)();
 router.get('/', (req, res) => productsController.getAll(req, res));
+router.get('/type/:id', (req, res) => productsController.findByProductType(req, res));
 exports.default = router;
 //# sourceMappingURL=products.routes.js.map

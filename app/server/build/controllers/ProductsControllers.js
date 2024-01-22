@@ -20,6 +20,20 @@ class ProductsController {
             return res.status(500).json({ message: 'Internal Error' });
         }
     }
+    async findByProductType(req, res) {
+        try {
+            const { id } = req.params;
+            if (!id) {
+                return res.status(400).json({ message: 'The id parameter is required' });
+            }
+            const { status, data } = await this.productsService.findByProductType(Number(id));
+            return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
+        }
+        catch (e) {
+            console.log(e);
+            return res.status(500).json({ message: 'Internal Error' });
+        }
+    }
 }
 exports.default = ProductsController;
 //# sourceMappingURL=ProductsControllers.js.map

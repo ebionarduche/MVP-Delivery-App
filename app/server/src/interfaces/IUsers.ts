@@ -20,4 +20,5 @@ export interface IToken {
 
 export interface IUsersModel {
   findbyEmail(email: IUsers['email']): Promise<IUsers | null>
+  createNewUser(user: IUsers): Promise<IUsers | null>
 }

@@ -20,6 +20,23 @@
   height: 600px;
 }
 
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-back-page {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.login-link{
+  text-decoration: none;
+  color: rgba(156, 0, 0, 0.795);
+}
+
 .login-title {
   font-size: 3rem;
   font-weight: 400;

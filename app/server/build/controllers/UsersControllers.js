@@ -18,6 +18,15 @@ class UsersController {
             return res.status(500).json({ message: 'Internal Error' });
         }
     }
+    async CreateNewUser(req, res) {
+        try {
+            const { status, data } = await this.usersService.CreateNewUser(req.body);
+            return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
+        }
+        catch {
+            return res.status(500).json({ message: 'Internal Error' });
+        }
+    }
 }
 exports.default = UsersController;
 //# sourceMappingURL=UsersControllers.js.map

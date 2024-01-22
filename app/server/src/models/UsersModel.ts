@@ -10,4 +10,11 @@ export default class UsersModel implements IUsersModel {
 		if(!user) return null;
 		return user.dataValues;
 	}
+
+	async createNewUser(user: IUsers): Promise<IUsers | null> {
+		const newUser = await this.model.create(user);
+
+		if(!user) return null;
+		return newUser.dataValues;
+	}
 }

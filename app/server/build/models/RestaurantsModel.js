@@ -22,6 +22,22 @@ class RestaurantsModel {
         });
         return data;
     }
+    async findById(id) {
+        const data = await this.model.findAll({
+            attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
+            include: [
+                {
+                    model: Categories_1.default,
+                    attributes: ['id', 'category'],
+                    as: 'categories',
+                },
+            ],
+            where: {
+                id: id,
+            },
+        });
+        return data;
+    }
     async findByQuery(query) {
         const data = await this.model.findAll({
             attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
@@ -40,10 +56,26 @@ class RestaurantsModel {
             where: {
                 [sequelize_1.Op.or]: [
                     { 'restaurantName': { [sequelize_1.Op.like]: `%${query}%` } },
-                    // { 'description': { [Op.like]: `%${query}%` } },
-                    // { 'productName': { [Op.like]: `%${query}%` } },
+                    { '$products.description$': { [sequelize_1.Op.like]: `%${query}%` } },
+                    { '$products.product_name$': { [sequelize_1.Op.like]: `%${query}%` } },
                 ],
             },
+        });
+        return data;
+    }
+    async findByCategoryId(id) {
+        const data = await this.model.findAll({
+            attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
+            include: [
+                {
+                    model: Categories_1.default,
+                    attributes: ['id', 'category'],
+                    as: 'categories',
+                    where: {
+                        id: id,
+                    },
+                },
+            ],
         });
         return data;
     }
