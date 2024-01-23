@@ -1,7 +1,5 @@
 import React from 'react';
-// import RestaurantContext from '../context/RestaurantContext';
 import { useHistory } from 'react-router-dom';
-// import axios from 'axios';
 import mouth from '../images/mouth.png';
 import user from '../images/icons/user.svg';
 import logOut from '../images/icons/log-out.svg';
