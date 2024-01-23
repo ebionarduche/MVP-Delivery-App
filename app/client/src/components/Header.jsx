@@ -11,9 +11,11 @@ import shoppingBag from '../images/icons/shopping-bag.svg';
 
 function Header() {
     const history = useHistory();
-
+    
     const [searchTerm, setsearchTerm] = useState('');
     const { setrestaurantsData, originalData } = useContext(RestaurantContext);
+    // const [userInfo, setUserInfo] = useState({});
+
 
     const handleInputChange = async ({ target: { value } }) => {
         setsearchTerm(value);
@@ -41,11 +43,14 @@ function Header() {
                 className='header-search-bar'
                 type="text"
                 name="search-bar"
+                placeholder="Busque por item ou restaurante"
                 value={searchTerm}
-                onChange={() => handleInputChange()}
+                onChange={(e) => handleInputChange(e)}
             />
-            <span>Olá Fred, você está neste endereço?</span>
-            <span>Colocar Endereço</span>
+            <section>
+                <p>{`Olá ${name || 'Usuário'}, você está neste endereço?`}</p>
+                <span>{`${name || 'Endereço indisponivel'}`}</span>
+            </section>
             <img src={user} alt=""  width='30px'/>
             <button
                 onClick={handleLogOut}
