@@ -2,28 +2,46 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 50px;
+  margin: 20px;
+  width: 100%;
 }
 
 .restarant-details-wallpaper {
-  width: 1500px;
+  width: 1400px;
   height: 250px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 .restarant-details-content {
   display: flex;
-  width: 1500px;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin: 20px;
+  width: 1380px;
+  border-radius: 0 0 20px 20px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.restarant-details-logo-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
 
 .restarant-details-logo {
-  width: 150px; 
-  position: absolute;
-  top: 220px;
-  left: 20%;
-
-  /* left: 230px;  */
+  width: 125px;
+  margin: 20px 20px 20px 40px;
 }
+
+.restarant-details-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px
+}
+
+.restarant-details-info {
+  margin: 2.5px;
+  font-weight: 400;
+  font-size: 1rem;
+} 
