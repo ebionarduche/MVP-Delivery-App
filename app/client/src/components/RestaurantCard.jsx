@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import perfil from '../images/nashville-perfil.png';
 import './style/RestaurantCard.css';
 
 
@@ -24,8 +23,7 @@ function RestaurantCard({ restaurantsData }) {
                         onClick={() => handleClick(restaurant.id)}
                         className='restaurant-card' key={restaurant.id}>
                         <img className='restaurant-card-wallpaper'src={ restaurant.wallpaper } alt="" />
-                        {/* <img className='restaurant-card-perfil' src={restaurant.logo} alt="" /> */}
-                        <img className='restaurant-card-perfil'src={ perfil } alt="" />
+                        <img className='restaurant-card-perfil' src={restaurant.logo} alt="" />
                         <div className='restaurant-card-title'> 
                             <h1 className='restaurant-card-name'>{restaurant.restaurantName}</h1>
                             <h2 className='restaurant-card-resume'>{restaurant.resume}</h2>
