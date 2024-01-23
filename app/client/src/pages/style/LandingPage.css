@@ -108,5 +108,10 @@
 
   .landing-page-button-create-account {
     margin-top: 200px;
+    width: 100%;
+  }
+
+  .landing-page-button-login {
+    width: 100%;
   }
   }

@@ -49,14 +49,14 @@ function Login() {
                         <img className='login-arrow-back' src={arrow} alt="" />
                     </button>
                     <div>
-                        <p>Não tem conta?</p>
+                        <p className='login-forgot-password'>Não tem conta?</p>
                         <a className='login-link' href='/registration'>Cadastre-se</a>
                     </div>
                 </div>
 
                 <h1 className='login-title' >Acesse seus restaurantes prediletos</h1>
-
                 <form className='login-form'>
+                    
                     <input 
                         className='login-input-email'
                         type="email"
@@ -80,7 +80,7 @@ function Login() {
                     >
                         Entrar
                     </button>
-                    <span>Esqueci minha senha</span>
+                    <span className='login-forgot-password' >Esqueci minha senha</span>
                 </form>
             </div>
         </div>
