@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  position: relative;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer-button {
+  background-color:transparent;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-button-img {
+  width: 30px;
+  object-fit: cover;
+}
+
+.search-input-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input-overlay input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+}
+

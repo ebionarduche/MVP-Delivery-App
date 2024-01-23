@@ -34,7 +34,7 @@
 
 .login-link{
   text-decoration: none;
-  color: rgba(156, 0, 0, 0.795);
+  color: rgba(250, 0, 0, 0.89);
 }
 
 .login-title {
@@ -86,3 +86,41 @@
   color: white;
 }
 
+@media (max-width: 1500px) {
+  .login-container {
+    height: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  
+  .login-back-color {
+    background-color: transparent;
+    height: auto;
+    padding: 0;
+    margin: 60px;
+    text-align: start;
+    width: 100%;
+  }
+
+  .login-header {
+    margin: 0 20px 50px 10px;
+  }
+
+  .login-title {
+    color: rgba(250, 250, 250, 0.829);
+    font-size: 2em;
+    margin: 10px 10px 125px 10px;
+    max-width: 180px;
+    white-space: wrap;
+
+
+  }
+  .landing-page-button-create-account {
+    margin-top: 200px;
+  }
+
+  .login-forgot-password {
+    color: rgba(255, 255, 255, 0.822);
+  }
+  }

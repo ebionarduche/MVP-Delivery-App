@@ -1,0 +1,76 @@
+.restarant-details-wallpaper {
+  width: 1400px;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
+}
+
+.restarant-details-content {
+  display: flex;
+  width: 1380px;
+  height: 150px;
+  border-radius: 0 0 20px 20px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.restarant-details-logo-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.restarant-details-logo {
+  width: 120px;
+  margin: 20px 20px 20px 40px;
+}
+
+.restarant-details-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px
+}
+
+.restarant-details-info {
+  margin: 2.5px;
+  font-weight: 400;
+  font-size: 1rem;
+} 
+
+@media (max-width: 1200px) {
+  .restarant-details-wallpaper {
+    width: 100%;
+    border-radius: 0px ;
+    height: 150px;
+  }
+  
+  .restarant-details-content {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 35px;
+    border-radius: 0px ;
+
+  }
+
+  .restarant-details-name {
+    font-size: 1rem;
+  }
+
+  .restarant-details-resume {
+    font-size: 0.9rem;
+  }
+
+
+  .restarant-details-info {
+    font-size: 0.9rem;
+  }
+
+
+  .restarant-details-logo {
+    width: 70px;
+    margin: 8px;
+
+  }
+}
