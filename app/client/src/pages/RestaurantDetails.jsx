@@ -7,6 +7,7 @@ import './style/RestaurantDetails.css';
 import CarouselProducts from '../components/CarouselProducts';
 import { useMediaQuery } from 'react-responsive';
 import WallpaperDesktop from '../components/WallpaperDesktop';
+import Footer from '../components/Footer';
 
 
 
@@ -37,7 +38,7 @@ function RestaurantDetails() {
 
     return (
         <div>
-            {!isMobile && <Header />}
+            <Header />
             <div className='restarant-details-container'>
                 <WallpaperDesktop restaurant={restaurant} />
                 <h2 className='restarant-details-type'>Pratos</h2>
@@ -45,6 +46,7 @@ function RestaurantDetails() {
                 <h2 className='restarant-details-type'>Bebidas</h2>
                 { isMobile ? <CarouselProducts products={drinks}/> : <ProductsCard products={drinks} /> }
             </div>
+            {isMobile && <Footer />}
         </div>
     );
     

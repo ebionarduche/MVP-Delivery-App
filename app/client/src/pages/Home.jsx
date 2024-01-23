@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import CategoriesList from '../components/CategoriesList';
 import CarouselCategories from '../components/CarouselCategories';
 import { useMediaQuery } from 'react-responsive';
+import Footer from '../components/Footer';
+import './style/Home.css';
 
 
 
@@ -14,11 +16,13 @@ function Home() {
 
 
     return(
-        <div>
+        <div className='home-container'>
             <Header />
             {!isMobile && <CategoriesList />}
             {isMobile && <CarouselCategories />}
             <RestaurantCard restaurantsData={restaurantsData}/>
+            {isMobile && <Footer />}
+
         </div>
     );
 }
