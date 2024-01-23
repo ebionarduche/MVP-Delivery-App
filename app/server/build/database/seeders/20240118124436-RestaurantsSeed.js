@@ -9,7 +9,7 @@ exports.default = {
                 resume: 'Melhor lanche da cidade',
                 address: 'Rua dos Burgers Número 02',
                 phone: '(24) 84362-4544',
-                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/nashville-perfil.png',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-Nashv.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/nashville-wallpaper.jpg'
             },
             {
@@ -18,7 +18,7 @@ exports.default = {
                 resume: 'Pizzas deliciosas para todos os gostos',
                 address: 'Avenida das Pizzas Número 123',
                 phone: '(24) 555-1234',
-                logo: 'link-imagem-logo-pizza',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/Pizza-Place.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/pizza-place-wallpaper.jpg'
             },
             {
@@ -27,7 +27,7 @@ exports.default = {
                 resume: 'Variedade de sorvetes deliciosos',
                 address: 'Avenida dos Sorvetes Número 789',
                 phone: '(24) 999-4567',
-                logo: 'link-imagem-logo-sorveteria',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-sorveteria.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/soverteria-delicia-wallpaper.jpg'
             },
             {
@@ -36,7 +36,7 @@ exports.default = {
                 resume: 'Culinária em um ambiente encantador',
                 address: 'Rua das Delícias Número 543',
                 phone: '(24) 777-8888',
-                logo: 'link-imagem-logo-bistro',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-bistro.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/bristo-encantado.jpg'
             },
             {
@@ -45,7 +45,7 @@ exports.default = {
                 resume: 'Deliciosos pratos de sushi',
                 address: 'Rua do Sushi 789',
                 phone: '(24) 111-2222',
-                logo: 'link-imagem-logo-sushi',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-sushi.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/sushi-palace.jpg'
             },
             {
@@ -54,7 +54,7 @@ exports.default = {
                 resume: 'Autêntica culinária italiana',
                 address: 'Via Italia 123',
                 phone: '(24) 456-7890',
-                logo: 'link-imagem-logo-italiano',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-giardino.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/restaurante-italiano-wallpaper.jpg'
             },
             {
@@ -63,7 +63,7 @@ exports.default = {
                 resume: 'Saborosos hambúrgueres artesanais',
                 address: 'Avenida dos Burgers 456',
                 phone: '(24) 987-6543',
-                logo: 'link-imagem-logo-burger',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/Logo-burguer-shack.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/burguer-shack.jpg'
             },
             {
@@ -72,8 +72,26 @@ exports.default = {
                 resume: 'Opções saudáveis e deliciosas',
                 address: 'Rua das Verduras 567',
                 phone: '(24) 567-8901',
-                logo: 'link-imagem-logo-veggie',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-veggie.png',
                 wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/veggie-haven-wallpaper.jpg'
+            },
+            {
+                restaurant_name: 'Padaria Pão Quente',
+                category_id: 5,
+                resume: 'Deliciosos pães e doces fresquinhos',
+                address: 'Av. das Baguetes, 123',
+                phone: '(24) 98765-4321',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-padaria.png',
+                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/padaria-pao-quente.jpg'
+            },
+            {
+                restaurant_name: 'Marmitaria Sabor Caseiro',
+                category_id: 6,
+                resume: 'Refeições caseiras e saborosas',
+                address: 'Rua das Marmitas, 456',
+                phone: '(22) 87654-3210',
+                logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-marmita.png',
+                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/marmitaria-sabor-caseiro.jpg'
             }
         ], {});
     },

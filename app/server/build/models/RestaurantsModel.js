@@ -23,7 +23,7 @@ class RestaurantsModel {
         return data;
     }
     async findById(id) {
-        const data = await this.model.findAll({
+        const data = await this.model.findByPk(id, {
             attributes: ['id', 'restaurantName', 'resume', 'address', 'phone', 'logo', 'wallpaper'],
             include: [
                 {
@@ -32,9 +32,6 @@ class RestaurantsModel {
                     as: 'categories',
                 },
             ],
-            where: {
-                id: id,
-            },
         });
         return data;
     }
