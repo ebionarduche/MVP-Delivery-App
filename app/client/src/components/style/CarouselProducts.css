@@ -7,7 +7,7 @@
 .product-carousel {
   background-color: rgb(255, 255, 255);
   border: 1px solid #e6e6e6;
-  width: 220px;
+  width: 205px;
   height: 320px;
   margin: 2%;
   border-radius: 20px;
@@ -25,7 +25,7 @@
 }
 
 .product-carousel-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 10px;
   color: rgba(0, 0, 0, 0.950);
@@ -41,14 +41,14 @@
 
 .product-carousel-description {
   font-size: 0.8rem;
-  width: 130px;
+  width: 120px;
   white-space: wrap;
   color: rgba(0, 0, 0, 0.651);
 
 }
 
 .product-carousel-price {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 500;
   color: rgba(192, 0, 0, 0.692);
 }

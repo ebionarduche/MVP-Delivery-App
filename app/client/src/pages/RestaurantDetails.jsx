@@ -5,6 +5,10 @@ import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
 import './style/RestaurantDetails.css';
 import CarouselProducts from '../components/CarouselProducts';
+import { useMediaQuery } from 'react-responsive';
+import WallpaperDesktop from '../components/WallpaperDesktop';
+
+
 
 
 function RestaurantDetails() {
@@ -12,6 +16,7 @@ function RestaurantDetails() {
     const [drinks, setDrinks] = useState([]);
     const [restaurant, setrestaurant] = useState([]);
     const { id } = useParams();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
 
     useEffect(() => {
@@ -32,26 +37,13 @@ function RestaurantDetails() {
 
     return (
         <div>
-            <Header />
+            {!isMobile && <Header />}
             <div className='restarant-details-container'>
-                <img className='restarant-details-wallpaper' src={restaurant.wallpaper} alt="" />
-                <section className='restarant-details-content'>
-                    <div className='restarant-details-logo-container'>
-                        <img className='restarant-details-logo' src={restaurant.logo} alt="" />
-                        <div>
-                            <h1 className='restarant-details-name'>{restaurant.restaurantName}</h1>
-                            <p className='restarant-details-resume'>{restaurant.resume}</p>
-                        </div>
-                    </div>
-                    <div className='restarant-details-info-container'>
-                        <span className='restarant-details-info'>{restaurant.address}</span>
-                        <p className='restarant-details-info'>{restaurant.phone}</p>
-                    </div>
-                </section>
-                <ProductsCard products={meals} />
-                <ProductsCard products={drinks} />
-                <CarouselProducts products={meals} />
-                <CarouselProducts products={drinks} />
+                <WallpaperDesktop restaurant={restaurant} />
+                <h2 className='restarant-details-type'>Pratos</h2>
+                { isMobile ? <CarouselProducts products={meals}/> : <ProductsCard products={meals} /> }
+                <h2 className='restarant-details-type'>Bebidas</h2>
+                { isMobile ? <CarouselProducts products={drinks}/> : <ProductsCard products={drinks} /> }
             </div>
         </div>
     );

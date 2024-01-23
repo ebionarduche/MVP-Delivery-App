@@ -40,8 +40,9 @@ function CarouselCategories() {
     return (
         <Swiper 
             slidesPerView={3}
-            spaceBetween={50}
+            spaceBetween={25}
             zoom={false}
+            pagination={{ clickable: true }}
             className='categories-carousel-container'>
             {
                 categories.map((category) => (

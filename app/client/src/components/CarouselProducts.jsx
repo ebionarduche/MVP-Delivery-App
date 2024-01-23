@@ -11,7 +11,7 @@ function CarouselProducts({ products }) {
 
     return(
         <Swiper 
-            spaceBetween={100}
+            spaceBetween={50}
             slidesPerView={2}
             className='product-carousel-container'>
             {
