@@ -12,11 +12,13 @@
   background-color: rgb(255, 255, 255);
   width: 400px;
   margin: 2%;
-  border-radius: 5px;
+  border-radius: 0 0 10px 10px;
 }
 
 .restaurant-card-wallpaper {
     width: 400px;
+    border-radius: 10px 10px 0 0;
+
 }
 
 .restaurant-card-perfil {
@@ -34,7 +36,6 @@
 .restaurant-card-resume {
   font-size: 1rem;
   font-weight: 400;;
-
 }
 
 .restaurant-card-title {
@@ -42,6 +43,30 @@
   flex-direction: column;
   width: 100%;
   padding: 10px;
-
   transform: translateX(20%);
+}
+
+@media screen and (max-width: 1200px) {
+  .restaurant-card-container {
+    width: 100%;
+  }
+
+  .restaurant-card {
+    width: 90%;
+  }
+
+  .restaurant-card-wallpaper {
+    width: 100%;
+  }
+
+  .restaurant-card-perfil {
+    width: 60px;
+    top: 80px;
+    left: 10px;
+  }
+
+  .restaurant-card-resume {
+    font-size: 0.9rem;
+  }
+  
 }

@@ -17,3 +17,21 @@
   margin: 10px;
   cursor: pointer;
 }
+
+.search-input-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input-overlay input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: calc(100% - 20px); /* Leva em consideração o padding de 10px em cada lado */
+}
+
