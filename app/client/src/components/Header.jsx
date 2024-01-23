@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import RestaurantContext from '../context/RestaurantContext';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import './style/Header.css';
 import mouth from '../images/mouth.png';
@@ -9,6 +10,8 @@ import shoppingBag from '../images/icons/shopping-bag.svg';
 
 
 function Header() {
+    const history = useHistory();
+
     const [searchTerm, setsearchTerm] = useState('');
     const { setrestaurantsData, originalData } = useContext(RestaurantContext);
 
@@ -25,6 +28,11 @@ function Header() {
         }
     };
 
+    const handleLogOut = () => {
+        localStorage.clear();
+        history.push('/');
+    };
+
     return (
         <div className='header-container'>
             <img className='header-img' src={mouth} alt="" />
@@ -34,12 +42,16 @@ function Header() {
                 type="text"
                 name="search-bar"
                 value={searchTerm}
-                onChange={handleInputChange}
+                onChange={() => handleInputChange()}
             />
             <span>Olá Fred, você está neste endereço?</span>
             <span>Colocar Endereço</span>
             <img src={user} alt=""  width='30px'/>
-            <img src={logOut} alt=""  width='30px'/>
+            <button
+                onClick={handleLogOut}
+            >
+                <img src={logOut} alt=""  width='30px'/>
+            </button>
             <img src={shoppingBag} alt=""  width='30px'/>
         </div>
     );

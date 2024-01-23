@@ -6,7 +6,6 @@ import './style/CategoriesList.css';
 function CategoriesList() {
     const { setrestaurantsData, originalData } = useContext(RestaurantContext);
     const [categories, setCategories] = useState([]);
-    // const [searchCategories, setSearchCategories] = useState(''); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10
     const [selectedCategoryId, setSelectedCategoryId] = useState(null);
 
     useEffect(() => {

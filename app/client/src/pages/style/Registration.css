@@ -1,0 +1,78 @@
+.registration-container {
+  background-image: url(../../images//wallpapers//wallpaper-login-desktop.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 2.5%;
+  margin: 80px;
+  border-radius: 25px;
+  width: 500px;
+  height: 600px;
+}
+
+.registration-title {
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.795);
+  margin-top: 5%;
+}
+
+.registration-first {
+  margin-top: 5%;
+}
+
+.registration-form-user-name,
+.registration-form-email,
+.registration-form-password,
+.registration-form-phone,
+.registration-form-address{
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 0 15px;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.registration-form-submit {
+  width:85%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff01018c;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 5%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form-submit:hover {
+  background-color: #ff0101b9;
+  color: white;
+}
+
+label {
+  margin-left: 100px;
+  font-size: 1.2rme;
+  font-weight: 600;
+  color: #0000009a;
+  width: 100%;
+
+}
