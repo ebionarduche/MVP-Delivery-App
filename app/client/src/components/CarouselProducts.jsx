@@ -1,59 +1,51 @@
-// import React, { useRef } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import './style/CarouselProducts.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 
+function CarouselProducts({ products }) {
 
-// function CarouselProducts() {
-//     const carousel = useRef(null);
+    return(
+        <Swiper 
+            spaceBetween={100}
+            slidesPerView={2}
+            className='product-carousel-container'>
+            {
+                products.map((product) => (
+                    <SwiperSlide key={product.id}>
+                        <div className='product-carousel'>
+                            <img className='product-carousel-img' src={product.illustration} alt="" />
+                            <h1 className='product-carousel-title'>{product.productName}</h1>
+                            <div className='product-carousel-description-container'>
+                                <h2 className='product-carousel-description'>{product.description}</h2>
+                                <span className='product-carousel-price'>{`R$ ${product.price}`}</span>
+                            </div>
+                        </div>
+                    </SwiperSlide>
 
-//     const handleClickLeft = () => {
-//         console.log(carousel.current.offsetWidth);
-//         carousel.current.scrollLeft -= carousel.current.offsetWidth / 2;
-//     };
+                ))
+            }
+        </Swiper>
+    );
+}
 
-//     const handleClickRight = () => {
-//         console.log(carousel.current.offsetWidth);
-//         carousel.current.scrollLeft += carousel.current.offsetWidth / 2;
-//     };
-//     return (
-//         <div className="carousel">
-//             <button
-//                 onClick={ () => handleClickLeft() }
-//                 type="button"
-//                 className="carousel-button"
-//             >
-//                 <img src={ arrowLeft } alt="arrow-left" />
-//             </button>
-//             <div className="carousel-container" ref={ carousel }>
-//                 {
-//                     products.map((product) => (
-//                         <div key={ product.id } className="carousel-item">
-//                             <div className="carousel-image">
-//                                 <img src={ product.primaryImage } alt="" />
-//                             </div>
-//                             <h1>{product.name}</h1>
-//                             <h2>{product.categories}</h2>
-//                             <span>
-//                 R$
-//                                 {' '}
-//                                 {product.price}
-//                             </span>
-//                             <button type="button" onClick={ () => handleClick(product.id) }>
-//                 Comprar
-//                             </button>
-//                         </div>
-//                     ))
-//                 }
-//             </div>
-//             <button
-//                 onClick={ () => handleClickRight() }
-//                 type="button"
-//                 className="carousel-button"
-//             >
-//                 <img src={ arrowRight } alt="arrow-right" />
-//             </button>
-//         </div>
-//     );
 
-// }
+CarouselProducts.propTypes = {
+    products: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number,
+            illustration: PropTypes.string,
+            productName: PropTypes.string,
+            description: PropTypes.string,
+            price: PropTypes.number,
+        })
+    ).isRequired,
+};
 
-// export default CarouselProducts;
+
+export default CarouselProducts;
+

@@ -4,6 +4,7 @@ import axios from 'axios';
 import ProductsCard from '../components/ProductsCard';
 import Header from '../components/Header';
 import './style/RestaurantDetails.css';
+import CarouselProducts from '../components/CarouselProducts';
 
 
 function RestaurantDetails() {
@@ -49,6 +50,8 @@ function RestaurantDetails() {
                 </section>
                 <ProductsCard products={meals} />
                 <ProductsCard products={drinks} />
+                <CarouselProducts products={meals} />
+                <CarouselProducts products={drinks} />
             </div>
         </div>
     );
