@@ -38,10 +38,14 @@ function Header() {
                         <p>{`Olá ${name || 'Usuário'}, você está neste endereço?`}</p>
                         <span>{`${name || 'Endereço indisponível'}`}</span>
                     </section>
-
-                    <img src={user} alt="" width='30px' />
+                    <button
+                        className='header-button'
+                    >                    
+                        <img src={user} alt="" width='30px' />
+                    </button>
 
                     <button
+                        className='header-button'
                         onClick={handleLogOut}
                     >
                         <img src={logOut} alt="" width='30px' />

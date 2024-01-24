@@ -7,7 +7,7 @@ exports.default = {
                 product_name: 'Clássico com Queijo',
                 restaurant_id: 1,
                 type_id: 1,
-                description: 'Um clássico irresistível com pão, carne suculenta, queijo derretido e bacon crocante.',
+                description: 'Um irresistível com pão, carne suculenta, queijo e bacon.',
                 price: 21.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/NashVille/hamburguer-classico.jpg'
             },
@@ -15,7 +15,7 @@ exports.default = {
                 product_name: 'Vegan Burguer',
                 restaurant_id: 1,
                 type_id: 1,
-                description: 'Uma opção deliciosa e saudável com pão integral, carne de soja, tomate e alface.',
+                description: 'Uma opção saudável com pão, carne de soja, tomate e alface.',
                 price: 23.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/NashVille/hamburguer-vegano.jpg'
             },
@@ -23,7 +23,7 @@ exports.default = {
                 product_name: 'Especial BBQ',
                 restaurant_id: 1,
                 type_id: 1,
-                description: 'O nosso queridinho com pão brioche, carne, queijo, bacon e molho barbecue.',
+                description: 'O queridinho pão brioche, carne, queijo, bacon e barbecue.',
                 price: 25.99,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/NashVille/hamburguer-bbq.jpg'
             },
@@ -39,7 +39,7 @@ exports.default = {
                 product_name: 'Cheddar Explosion',
                 restaurant_id: 1,
                 type_id: 1,
-                description: 'Um festival de sabores com cheddar cremoso, pão macio, carne suculenta e tempero especial.',
+                description: 'Cheddar cremoso, pão macio, carne suculenta e tempero especial.',
                 price: 22.99,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/NashVille/cheddar.png'
             },
@@ -511,7 +511,7 @@ exports.default = {
                 product_name: 'Hambúrguer Vegano de Grão-de-Bico',
                 restaurant_id: 8,
                 type_id: 1,
-                description: 'Pão integral, hambúrguer de grão-de-bico, queijo vegano e vegetais frescos.',
+                description: 'Pão integral, hambúrguer de grão-de-bico, queijo vegano e vegetais.',
                 price: 24.99,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Veggie-Haven/hamburguer-vegano-gr%C3%A3o-de-bico.png'
             },
@@ -519,7 +519,7 @@ exports.default = {
                 product_name: 'Tacos Veganos de Abacate',
                 restaurant_id: 8,
                 type_id: 1,
-                description: 'Tortilhas de milho, abacate fresco, feijão preto e molho picante.',
+                description: 'Tortilhas de milho, abacate fresco, feijão e molho picante.',
                 price: 22.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Veggie-Haven/tacos-vegetariano-abacate.jpg'
             },
@@ -599,7 +599,7 @@ exports.default = {
                 product_name: 'Bolo de Cenoura com Cobertura de Chocolate',
                 restaurant_id: 9,
                 type_id: 1,
-                description: 'Fofinho bolo de cenoura com generosa cobertura de chocolate.',
+                description: 'Bolo de cenoura com generosa cobertura de chocolate.',
                 price: 8.75,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Padaria-P%C3%A3o-Quente/cobertura_de_chocolate_com_leite_condensado_para_bolo_de_cenoura_8491_600.jpg'
             },
@@ -607,7 +607,7 @@ exports.default = {
                 product_name: 'Sanduíche de Frango Defumado',
                 restaurant_id: 9,
                 type_id: 1,
-                description: 'Sanduíche com frango defumado, queijo e molho especial.',
+                description: 'Sanduíche com frango defumado e molho especial.',
                 price: 9.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Padaria-P%C3%A3o-Quente/Receita-de-sanduiche-frango.jpg'
             },
@@ -615,7 +615,7 @@ exports.default = {
                 product_name: 'Empada de Camarão',
                 restaurant_id: 9,
                 type_id: 1,
-                description: 'Empada recheada com suculentos camarões e temperos exclusivos.',
+                description: 'Empada recheada com suculentos camarões e temperos.',
                 price: 7.25,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Padaria-P%C3%A3o-Quente/Empadinha-de-Camarao-Site.jpg'
             },
@@ -655,7 +655,7 @@ exports.default = {
                 product_name: 'Marmita de Frango Grelhado com Legumes',
                 restaurant_id: 10,
                 type_id: 1,
-                description: 'Saborosa marmita com peito de frango grelhado e mix de legumes frescos.',
+                description: 'Marmita com peito de frango grelhado e mix de legumes.',
                 price: 15.99,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Marmitaria-Sabor-Caseiro/marmita-frango-com-legumes.png'
             },
@@ -663,7 +663,7 @@ exports.default = {
                 product_name: 'Marmita Fit de Quinoa e Vegetais',
                 restaurant_id: 10,
                 type_id: 1,
-                description: 'Marmita saudável com quinoa, vegetais coloridos e molho especial.',
+                description: 'Marmita saudável com quinoa, vegetais coloridos e molho.',
                 price: 17.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Marmitaria-Sabor-Caseiro/marmita-quinoa.png'
             },
@@ -679,7 +679,7 @@ exports.default = {
                 product_name: 'Marmita Vegana de Curry de Grão-de-Bico',
                 restaurant_id: 10,
                 type_id: 1,
-                description: 'Opção vegana com curry de grão-de-bico, arroz integral e legumes variados.',
+                description: 'Opção vegana com grão-de-bico, arroz e legumes variados.',
                 price: 16.99,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Marmitaria-Sabor-Caseiro/ThaiCurry-grao-bico-marmitas-congeladas-mestre-cuco.jpg'
             },
@@ -687,7 +687,7 @@ exports.default = {
                 product_name: 'Marmita Fitness de Salmão Grelhado',
                 restaurant_id: 10,
                 type_id: 1,
-                description: 'Marmita fitness com salmão grelhado, batata-doce e brócolis.',
+                description: 'Marmita de salmão grelhado, batata-doce e brócolis.',
                 price: 21.50,
                 illustration: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/products-images/Marmitaria-Sabor-Caseiro/prato-de-salmao-com-quinua-e-vegetais-crus_181624-32050.png'
             },
