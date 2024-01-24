@@ -91,7 +91,7 @@ exports.default = {
                 address: 'Rua das Marmitas, 456',
                 phone: '(22) 87654-3210',
                 logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-marmita.png',
-                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/marmitaria-sabor-caseiro.jpg'
+                wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/marmitaria-wallpaper.png'
             }
         ], {});
     },

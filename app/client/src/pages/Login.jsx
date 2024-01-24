@@ -1,9 +1,8 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import './style/Login.css';
 import arrow from '../images/icons/arrow-left.svg';
-
 
 function Login() {
     const history = useHistory();
@@ -12,15 +11,21 @@ function Login() {
         email: '',
         password: '',
     });
-    
+
+    const [isEmailValid, setIsEmailValid] = useState(true);
+    const [loginError, setLoginError] = useState('');
 
     const handleInputChange = ({ target: { value, name } }) => {
         setFormData((prevData) => ({
             ...prevData,
             [name]: value,
         }));
-    };
 
+        if (name === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            setIsEmailValid(emailRegex.test(value));
+        }
+    };
 
     const handleLogin = async () => {
         try {
@@ -30,7 +35,12 @@ function Login() {
                 history.push('/home');
             }
         } catch (error) {
-            console.error(error);
+            if (error.response && error.response.status === 401) {
+                // Credenciais inválidas
+                setLoginError('Email ou senha incorretos.');
+            } else {
+                console.error(error);
+            }
         }
     };
 
@@ -38,14 +48,14 @@ function Login() {
         history.push(link);
     };
 
-    return(
+    return (
         <div className='login-container'>
             <div className='login-back-color'>
-
                 <div className='login-header'>
-                    <button 
+                    <button
                         onClick={() => navigatePage('/')}
-                        className='login-back-page'>
+                        className='login-back-page'
+                    >
                         <img className='login-arrow-back' src={arrow} alt="" />
                     </button>
                     <div>
@@ -54,33 +64,35 @@ function Login() {
                     </div>
                 </div>
 
-                <h1 className='login-title' >Acesse seus restaurantes prediletos</h1>
+                <h1 className='login-title'>Acesse seus restaurantes prediletos</h1>
                 <form className='login-form'>
-                    
-                    <input 
-                        className='login-input-email'
+
+                    <input
+                        className={`login-input-email ${isEmailValid ? '' : 'invalid'}`}
                         type="email"
                         name='email'
                         placeholder="Email"
                         value={formData.email}
-                        onChange={handleInputChange}    
+                        onChange={handleInputChange}
                     />
-                    <input 
-                        className='login-input-password' 
-                        type="password" 
+                    <input
+                        className='login-input-password'
+                        type="password"
                         name='password'
-                        placeholder="Senha" 
+                        placeholder="Senha"
                         value={formData.password}
                         onChange={handleInputChange}
                     />
-                    <button 
-                        type='button' 
+                    {loginError && <p className='login-error-message'>{loginError}</p>}
+                    <button
+                        type='button'
                         className='login-button-submit'
                         onClick={handleLogin}
+                        disabled={!formData.email || !formData.password || !isEmailValid}
                     >
                         Entrar
                     </button>
-                    <span className='login-forgot-password' >Esqueci minha senha</span>
+                    <span className='login-forgot-password'>Esqueci minha senha</span>
                 </form>
             </div>
         </div>

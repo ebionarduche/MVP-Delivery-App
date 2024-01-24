@@ -8,6 +8,17 @@
   margin-bottom: 20px;
 }
 
+.header-button {
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button-img {
+  cursor: not-allowed;
+
+}
+
 .header-img {
   width: 100px;
   object-fit: cover;

@@ -69,7 +69,7 @@ export default {
 				},
 				{
 					restaurant_name: 'Veggie Haven',
-					category_id: 1,
+					category_id: 7,
 					resume: 'Opções saudáveis e deliciosas',
 					address: 'Rua das Verduras 567',
 					phone: '(24) 567-8901',
@@ -83,7 +83,7 @@ export default {
 					address: 'Av. das Baguetes, 123',
 					phone: '(24) 98765-4321',
 					logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-padaria.png',
-					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/marmitaria-wallpaper.png'
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/padaria-pao-quente.jpg'
 				},
 				{
 					restaurant_name: 'Marmitaria Sabor Caseiro',
@@ -92,7 +92,7 @@ export default {
 					address: 'Rua das Marmitas, 456',
 					phone: '(22) 87654-3210',
 					logo: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-perfil/logo-marmita.png',
-					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/padaria-pao-quente.jpg'
+					wallpaper: 'https://raw.githubusercontent.com/ebionarduche/MVP-Delivery-App/main/app/server/src/database/images/restaurant-wallpaper/marmitaria-wallpaper.png'
 				}
 			],
 			{},

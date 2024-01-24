@@ -10,5 +10,5 @@ export interface IProducts {
 
 export interface IProductsModel {
   findAll(): Promise<IProducts[]>;
-  findByProductType(id: number): Promise<IProducts[]>;
+  findByProductType(typeid: number, restaurantsId: number): Promise<IProducts[]>;
 }
