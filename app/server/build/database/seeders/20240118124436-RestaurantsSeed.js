@@ -68,7 +68,7 @@ exports.default = {
             },
             {
                 restaurant_name: 'Veggie Haven',
-                category_id: 1,
+                category_id: 7,
                 resume: 'Opções saudáveis e deliciosas',
                 address: 'Rua das Verduras 567',
                 phone: '(24) 567-8901',
