@@ -28,21 +28,24 @@ class ProductsModel {
         });
         return data;
     }
-    async findByProductType(id) {
+    async findByProductType(typeId, restaurantsId) {
         const data = await this.model.findAll({
             attributes: ['id', 'productName', 'description', 'price', 'illustration'],
             include: [
                 {
                     model: Restaurants_1.default,
                     attributes: ['id', 'restaurantName'],
-                    as: 'restaurant'
+                    as: 'restaurant',
+                    where: {
+                        id: restaurantsId,
+                    }
                 },
                 {
                     model: ProductType_1.default,
                     attributes: ['id', 'type'],
                     as: 'product_types',
                     where: {
-                        id: id,
+                        id: typeId,
                     }
                 }
             ]

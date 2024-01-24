@@ -22,11 +22,11 @@ class ProductsController {
     }
     async findByProductType(req, res) {
         try {
-            const { id } = req.params;
-            if (!id) {
+            const { typeId, restaurantsId } = req.body;
+            if (!typeId || !restaurantsId) {
                 return res.status(400).json({ message: 'The id parameter is required' });
             }
-            const { status, data } = await this.productsService.findByProductType(Number(id));
+            const { status, data } = await this.productsService.findByProductType(typeId, restaurantsId);
             return res.status((0, mapStatusHTTP_1.default)(status)).json(data);
         }
         catch (e) {

@@ -31,7 +31,10 @@ function Footer() {
                 <img className='footer-button-img' src={searchIcon} alt="" />
             </button>
 
-            <button className='footer-button' type='button'>
+            <button 
+                onClick={() => history.push('/user')} 
+                className='footer-button' type='button'
+            >
                 <img className='footer-button-img' src={userIcon} alt="" />
             </button>
             <button className='footer-button' type='button'>

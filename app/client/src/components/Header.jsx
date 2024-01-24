@@ -45,13 +45,20 @@ function Header() {
                 </section>
             ) : (
                 <>
-                    <img className='header-img' src={mouth} alt="" />
+                    <button
+                        onClick={() => history.push('/home')}
+                        className='header-button'
+                        type='button'>
+                        <img className='header-img' src={mouth} alt="" />
+                    </button>
                     <SearchBar />
                     <section>
                         <p>{`Olá ${userData ? userData.userName : 'Usuário'}, você está neste endereço?`}</p>
                         <span>{`${userData ? userData.address : 'Endereço indisponível'}`}</span>
                     </section>
-                    <button className='header-button'>
+                    <button 
+                        onClick={() => history.push('/user')} 
+                        className='header-button'>
                         <img src={user} alt="" width='30px' />
                     </button>
 

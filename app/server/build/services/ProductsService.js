@@ -15,8 +15,8 @@ class ProductsService {
         }
         return { status: 'SUCCESS', data: products };
     }
-    async findByProductType(id) {
-        const products = await this.productsModel.findByProductType(id);
+    async findByProductType(typeId, restaurantsId) {
+        const products = await this.productsModel.findByProductType(typeId, restaurantsId);
         if (!products) {
             return { status: 'BAD_REQUEST', data: { message: 'Something went wrong' } };
         }
