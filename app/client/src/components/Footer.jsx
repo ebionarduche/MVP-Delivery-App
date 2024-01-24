@@ -35,7 +35,9 @@ function Footer() {
                 <img className='footer-button-img' src={userIcon} alt="" />
             </button>
             <button className='footer-button' type='button'>
-                <img className='footer-button-img' src={shoppingBagIcon} alt="" />
+                <img 
+                    style={{ cursor: 'not-allowed' }}
+                    className='footer-button-img' src={shoppingBagIcon} alt="" />
             </button>
 
             {showSearchInput && (

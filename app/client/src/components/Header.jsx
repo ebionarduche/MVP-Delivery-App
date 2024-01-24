@@ -62,7 +62,7 @@ function Header() {
                         <img src={logOut} alt="" width='30px' />
                     </button>
 
-                    <img src={shoppingBag} alt="" width='30px' />
+                    <img className='header-button-img' src={shoppingBag} alt="" width='30px' />
                 </>
             )}
         </div>

@@ -76,3 +76,41 @@ label {
   width: 100%;
 
 }
+
+
+@media (max-width: 1300px) {
+  .registration-container{
+    height: auto;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .registration-container{
+    height: auto;
+  }
+
+  .registration-form {
+    height: 100%;
+    width: 90%;
+    padding: 0;
+  }
+
+  .registration-title {
+    font-size: 1.8rem;
+  }
+
+.registration-form-user-name,
+.registration-form-email,
+.registration-form-password,
+.registration-form-phone,
+.registration-form-address {
+    width: 70%;
+    height: 40px;
+}
+
+.registration-form-submit {
+  margin-bottom: 15px;
+}
+
+}

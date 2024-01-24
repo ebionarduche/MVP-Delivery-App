@@ -20,16 +20,18 @@ function CategoriesList() {
         fetchData();
     }, []);
 
-    const handleImageClick = async (categoryId) => {  
-        setSelectedCategoryId(categoryId);
-        try {
-            const { data } = await axios.get(`http://localhost:3001/restaurants/category/${categoryId}`);
-            setrestaurantsData(data);
-        } catch (error) {
-            console.error(error);
-        }
-        if(categoryId === 0) {
+    const handleImageClick = async (categoryId) => {
+        if (categoryId === selectedCategoryId) {
+            setSelectedCategoryId(null);
             setrestaurantsData(originalData);
+        } else {
+            setSelectedCategoryId(categoryId);
+            try {
+                const { data } = await axios.get(`http://localhost:3001/restaurants/category/${categoryId}`);
+                setrestaurantsData(data);
+            } catch (error) {
+                console.error(error);
+            }
         }
     };
 
