@@ -64,3 +64,21 @@
   transition: 0.5s;
   background-color: rgb(206, 206, 206);
 }
+
+@media (max-width: 740px) {
+  .user-title {
+    font-size: 2rem;
+  }
+
+  .user-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .user-text {
+    font-size: 1.2rem;
+  }
+
+  .user-address {
+    font-size: 1.2rem;
+  }
+}
