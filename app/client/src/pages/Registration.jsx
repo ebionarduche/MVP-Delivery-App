@@ -13,7 +13,6 @@ function Registration() {
         address: '',
     });
 
-    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
     const handleInputChange = ({ target: { value, name } }) => {
         setFormData((prevData) => ({
@@ -21,8 +20,6 @@ function Registration() {
             [name]: value,
         }));
 
-        const allFieldsFilled = Object.values(formData).every((field) => field !== '');
-        setIsButtonDisabled(!allFieldsFilled);
     };
 
     const handleRegistration = async () => {
@@ -95,7 +92,6 @@ function Registration() {
                     type="button"
                     onClick={handleRegistration}
                     className="registration-form-submit"
-                    disabled={isButtonDisabled}
                 >
                     Cadastrar
                 </button>

@@ -12,11 +12,11 @@ Projeto de delivery full-stack que permite visualizar restaurantes, produtos e e
  - Axios: Requisições HTTP.
  - Swiper: Carrossel para a interface.
 ### Back-end:
- - Node.js: Ambiente de execução JavaScript.
- - Express: Framework web para Node.js.
  - TypeScript: Superset de JavaScript.
  - MySQL: Banco de dados relacional.
  - Sequelize: ORM para Node.js.
+ - Node.js: Ambiente de execução JavaScript.
+ - Express: Framework web para Node.js.
  - JWT: Autenticação por token.
  - Bcrypt: Hashing de senhas.
  - Nodemon: Reinicia automaticamente o servidor durante o desenvolvimento.

@@ -17,7 +17,7 @@ exports.default = {
                 password: '$2a$08$FvIMuYrJBDGVNMvJhlwvneezmkt2OqPkgXjKEnevqlADLzypJ8lja',
                 //123Ebio
                 address: 'Uberaba, Minas Gerais',
-                phone: '(16) 73556-0800'
+                phone: '(24) 98152-9446'
             },
             {
                 user_name: 'Gabriel Kaneko',
